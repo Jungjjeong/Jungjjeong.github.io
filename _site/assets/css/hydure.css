@@ -1,3 +1,5 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 :root { --body-font-size: 16px; --body-line-height: 1.5; --body-color:       var(--oc-gray-9); --body-color-light: var(--oc-gray-6); --body-bg:          var(--oc-white); --link-color:       var(--oc-blue-9); --heading-color:    var(--oc-black); --body-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; --brand-title-font: "Abril Fatface", serif; --heading-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; --code-font: 'Courier New', Courier, monospace; --sidebar-color: var(--oc-gray-4); --message-color: var(--oc-white); --message-bg:    var(--oc-yellow-9); --border-radius: .5em; --border-color:  var(--oc-gray-3); --code-bg:       var(--oc-gray-1); }
 
 @media (prefers-color-scheme: dark) { :root { --body-color:       var(--oc-gray-4); --body-color-light: var(--oc-gray-6); --body-bg:          var(--oc-gray-9); --link-color:       var(--oc-blue-4); --heading-color:    var(--oc-white); --message-color: var(--oc-gray-9); --message-bg:    var(--oc-yellow-4); --border-color:  var(--oc-gray-7); --code-bg:       var(--oc-gray-8); } }
@@ -76,13 +78,13 @@ abbr[title] { cursor: help; border-bottom: 1px dotted var(--border-color); }
 
 .content { padding: 4em 1em; }
 
-.main { font-family: var(--body-font); }
+.main { font-family: 'Noto Sans KR', sans-serif; }
 
 @media (min-width: 48rem) { .content { padding: 4em 4em; } }
 
 .footer { margin: 3em 0 0 0; padding: 1em 0; border-top: 1px solid var(--border-color); }
 
-.page h1, .page h2, .page h3, .page h4, .page h5, .page h6, .post h1, .post h2, .post h3, .post h4, .post h5, .post h6 { color: var(--heading-color); font-family: var(--heading-font); }
+.page h1, .page h2, .page h3, .page h4, .page h5, .page h6, .post h1, .post h2, .post h3, .post h4, .post h5, .post h6 { color: var(--heading-color); font-family: 'Noto Sans KR', sans-serif; }
 
 .page-title, .post-title { margin-top: 0; margin-bottom: 0; }
 

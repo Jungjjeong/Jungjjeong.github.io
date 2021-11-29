@@ -7,24 +7,22 @@ categories: jekyll update
 첫 github.io 기술 블로그 게시물입니다.
 한국어 가독성이 좋은지 확인하려 해요. 
 
-Jekyll requires blog post files to be named according to the following format:
+# 우아한 테크코스 프리코스 1주차
 
-`YEAR-MONTH-DAY-title.MARKUP`
+## 💻구현 기능 목록
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+- 컴퓨터는 `1~9` 사이의 숫자 3개 랜덤 생성.
+- 사용자가 3자리가 아닌 숫자나 `0`을 포함한 경우, 또는 문자를 입력했을 경우.
+    - alert 창 에러 메세지 출력
+    - 다시 입력 받을 수 있게 초기화
+- 사용자가 입력한 3자리의 숫자와 컴퓨터의 랜덤한 숫자를 비교.
+    - **스트라이크** : 같은 수가 같은 자리에 있음
+    - **볼** : 같은 수가 다른 자리에 있음
+    - **낫싱** : 같은 수, 같은 자리가 전혀 없음
+    - **숫자가 틀릴 경우 :**  입력창, 확인버튼, 알림창 재생성.
+- 스트라이크, 볼, 낫싱을 경우에 맞게 출력
+    - 스트라이크와 볼이 둘 다 있을 경우, 볼 먼저 출력
+- 숫자가 일치할 경우.
+    - 게임 종료
+    - 재시작 버튼 클릭 이벤트 구현
+    - test

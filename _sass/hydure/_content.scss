@@ -1,9 +1,10 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 .content {
   padding: 4em 1em;
 }
 
 .main {
-  font-family: var(--body-font);
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 @media (min-width: $md-screen) {
