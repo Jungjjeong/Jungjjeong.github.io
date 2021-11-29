@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  <style>
+    @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+    title,a ,p ,h1, h2, h3{
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+  </style>
   {% include head.html %}
 
   <body>
     <div id="layout" class="pure-g">
-      {% assign cover = site.cover | default: "https://cdn.jsdelivr.net/gh/zivong/jekyll-theme-hydure@v2.0.0/cover.jpg" %}
+      {% assign cover = site.cover | default: "https://user-images.githubusercontent.com/72294509/143907445-573e198b-474d-4d67-8500-736a9bfed5fc.jpg" %}
       {% if page.cover %}
         {% assign cover = page.cover %}
       {% endif %}

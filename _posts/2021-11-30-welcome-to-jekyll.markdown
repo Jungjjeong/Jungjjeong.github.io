@@ -2,7 +2,7 @@
 layout: post
 title:  "첫 Github.io 게시물입니다."
 date:   2021-11-30 00:55:25 +0900
-categories: jekyll first
+categories: jekyll update
 ---
 첫 github.io 기술 블로그 게시물입니다.
 한국어 가독성이 좋은지 확인하려 해요. 
