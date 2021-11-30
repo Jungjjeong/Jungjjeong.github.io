@@ -30,9 +30,9 @@ $xl-screen: 80rem;
   --code-bg:       #222222;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --body-color:       #222222;
+    --body-color:       #ffffff;
     --body-color-light: var(--oc-gray-6);
     --body-bg:          #222222;
     --link-color:       var(--oc-blue-4);
@@ -41,7 +41,7 @@ $xl-screen: 80rem;
     --message-color: var(--oc-gray-9);
     --message-bg:    var(--oc-yellow-4);
 
-    --border-color:  var(--oc-gray-1);
+    --border-color:  #414141;
 
     --code-bg:       #222222;
   }
