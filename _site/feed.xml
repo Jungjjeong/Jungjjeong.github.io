@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-30T16:26:03+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jung-Log</title><subtitle>즐겁게 사는 개발자 지영입니다.</subtitle><entry><title type="html">두번째 Github.io 게시물입니다.</title><link href="http://localhost:4000/update/2021/11/30/second.html" rel="alternate" type="text/html" title="두번째 Github.io 게시물입니다." /><published>2021-11-30T00:55:25+09:00</published><updated>2021-11-30T00:55:25+09:00</updated><id>http://localhost:4000/update/2021/11/30/second</id><content type="html" xml:base="http://localhost:4000/update/2021/11/30/second.html">&lt;p&gt;jekyll 구조 파악중&lt;/p&gt;</content><author><name></name></author><category term="update" /><category term="update" /><summary type="html">jekyll 구조 파악중</summary></entry><entry><title type="html">Jung-Log</title><link href="http://localhost:4000/intro/" rel="alternate" type="text/html" title="Jung-Log" /><published>2021-11-30T00:55:25+09:00</published><updated>2021-11-30T00:55:25+09:00</updated><id>http://localhost:4000/Introduce</id><content type="html" xml:base="http://localhost:4000/intro/">&lt;h3&gt;Jung-Log 시작하기&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-30T16:42:55+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jung-Log</title><subtitle>즐겁게 사는 개발자 지영입니다.</subtitle><entry><title type="html">두번째 Github.io 게시물입니다.</title><link href="http://localhost:4000/update/2021/11/30/second.html" rel="alternate" type="text/html" title="두번째 Github.io 게시물입니다." /><published>2021-11-30T00:55:25+09:00</published><updated>2021-11-30T00:55:25+09:00</updated><id>http://localhost:4000/update/2021/11/30/second</id><content type="html" xml:base="http://localhost:4000/update/2021/11/30/second.html">&lt;p&gt;jekyll 구조 파악중&lt;/p&gt;</content><author><name></name></author><category term="update" /><category term="update" /><summary type="html">jekyll 구조 파악중</summary></entry><entry><title type="html">Jung-Log</title><link href="http://localhost:4000/intro/" rel="alternate" type="text/html" title="Jung-Log" /><published>2021-11-30T00:55:25+09:00</published><updated>2021-11-30T00:55:25+09:00</updated><id>http://localhost:4000/Introduce</id><content type="html" xml:base="http://localhost:4000/intro/">&lt;h3&gt;Jung-Log 시작하기&lt;/h3&gt;
 
 &lt;p&gt;👩‍💻 안녕하세요 정지영입니다.&lt;/p&gt;
 &lt;p&gt;📚 동국대학교 소프트웨어 구조 연구실 학부 연구생입니다.
@@ -223,11 +223,13 @@
 
 &lt;h1 id=&quot;5-arcore-methods&quot;&gt;5. ARCORE METHODS&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&quot;ARCORE%20by%20Google%203fab3357844944eeae9f7c5e4ead7332/5-1%20Interfaces%20b5534da149c845ae95eebf2794228ed2.csv&quot;&gt;5-1. Interfaces&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;ARCORE%20by%20Google%203fab3357844944eeae9f7c5e4ead7332/5-2%20Classes%20(Image,%20Face%20%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%AC)%206f38caaebc7f425ba9e50e43c8f87d6b.csv&quot;&gt;5-2. Classes (Image, Face 제외)&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;ARCORE%20by%20Google%203fab3357844944eeae9f7c5e4ead7332/5-3%20Enums%20cc0fee4f96fd4b70afab623d8bb23f67.csv&quot;&gt;5-3. Enums&lt;/a&gt;
+&lt;h3 id=&quot;5-1interfaces&quot;&gt;5-1.Interfaces&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/144005515-57a6f1fb-668e-409b-bbd7-6a80719377c9.JPG&quot; alt=&quot;Interfaces&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;5-2classes&quot;&gt;5-2.Classes&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/144005518-d377c03a-2a15-4868-81b6-42d811c9bf35.JPG&quot; alt=&quot;Classes&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;5-3enums&quot;&gt;5-3.Enums&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/144005508-8177111e-e9be-4285-b7fc-a93181b1fa0c.JPG&quot; alt=&quot;Enums1&quot; /&gt;
+&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/144005513-78068e4d-2ea5-4194-a1b3-90fc4dc70d0b.JPG&quot; alt=&quot;Enums2&quot; /&gt;
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;6-develop&quot;&gt;6. DEVELOP&lt;/h1&gt;
