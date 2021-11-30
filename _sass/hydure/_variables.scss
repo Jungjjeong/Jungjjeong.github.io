@@ -22,15 +22,15 @@ $xl-screen: 80rem;
   --sidebar-color: var(--oc-gray-4);
 
   --message-color: var(--oc-white);
-  --message-bg:    var(--oc-yellow-4);
+  --message-bg:    var(--oc-yellow-2);
 
   --border-radius: .5em;
   --border-color:  var(--oc-gray-3);
 
-  --code-bg:       #272727;
+  --code-bg:       #464646;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --body-color:       #f0f0f0;
     --body-color-light: var(--oc-gray-6);
@@ -39,7 +39,7 @@ $xl-screen: 80rem;
     --heading-color:    var(--oc-white);
 
     --message-color: var(--oc-gray-9);
-    --message-bg:    var(--oc-yellow-4);
+    --message-bg:    var(--oc-yellow-2);
 
     --border-color:  #414141;
 

@@ -32,6 +32,10 @@ theme: minima
 plugins:
   - jekyll-feed
 
+category_archive:
+  type: liquid
+  path: /categories/
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

@@ -1,16 +1,339 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-30T17:34:24+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jung-Log</title><subtitle>즐겁게 사는 개발자 지영입니다.</subtitle><entry><title type="html">두번째 Github.io 게시물입니다.</title><link href="http://localhost:4000/update/2021/11/30/second.html" rel="alternate" type="text/html" title="두번째 Github.io 게시물입니다." /><published>2021-11-30T00:55:25+09:00</published><updated>2021-11-30T00:55:25+09:00</updated><id>http://localhost:4000/update/2021/11/30/second</id><content type="html" xml:base="http://localhost:4000/update/2021/11/30/second.html">&lt;p&gt;jekyll 구조 파악중&lt;/p&gt;</content><author><name></name></author><category term="update" /><category term="update" /><summary type="html">jekyll 구조 파악중</summary></entry><entry><title type="html">Jung-Log</title><link href="http://localhost:4000/intro/" rel="alternate" type="text/html" title="Jung-Log" /><published>2021-11-30T00:55:25+09:00</published><updated>2021-11-30T00:55:25+09:00</updated><id>http://localhost:4000/Introduce</id><content type="html" xml:base="http://localhost:4000/intro/">&lt;h3&gt;Jung-Log 시작하기&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-30T19:24:17+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jung-Log</title><subtitle>즐겁게 사는 개발자 지영입니다.</subtitle><entry><title type="html">ARKIT by Apple</title><link href="http://localhost:4000/application/2021/11/30/ARKit.html" rel="alternate" type="text/html" title="ARKIT by Apple" /><published>2021-11-30T19:13:25+09:00</published><updated>2021-11-30T19:13:25+09:00</updated><id>http://localhost:4000/application/2021/11/30/ARKit</id><content type="html" xml:base="http://localhost:4000/application/2021/11/30/ARKit.html">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;본 게시물은 2021.07 ~ 08 한샘에서 AR 가구 배치 어플리케이션을 개발할 때, 공부했던 내용입니다.&lt;/li&gt;
+  &lt;li&gt;Hanssem AR(Augmented Reality) Placement application development&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;👩‍💻 안녕하세요 정지영입니다.&lt;/p&gt;
-&lt;p&gt;📚 동국대학교 소프트웨어 구조 연구실 학부 연구생입니다.
-&lt;p&gt;💻 웹과 앱 개발을 하고 싶어요 &lt;/p&gt;
-&lt;p&gt;💻 특히 JavaScript와 Swift에 관심이 많습니다. &lt;/p&gt;&lt;br /&gt;
-&lt;p&gt;새로 알게 되는 것들, 배운 것들을 정리할 공간이 필요하다고 막연하게만 생각했는데, 드디어 블로그를 시작하게 되었습니다.&lt;br /&gt;
-&lt;br /&gt;고민할 시간에 부딫히며 몰입하고, 주변 사람들을 소중히 여기며 일하는 개발자가 되고 싶습니다. 개발을 하는 것이 전부가 아닌, 끊임없는 성장을 위해 달리고자 합니다.
-&lt;br /&gt;이를 위해 수많은 실패에도 좌절하지 않고, 배울 점을 전부 뽑을 때까지 돌려보내고 싶지 않습니다. 저는 패배주의에서 벗어나고, 운을 끌어들이는 삶을 살고 싶기 때문이죠.&lt;br /&gt;
-&lt;br /&gt;개발자로 일하며 제 성과에 대한 인정을 받을 때, 저는 가장 행복한 삶을 살아갈 수 있을 것 같습니다.&lt;br /&gt;
-행복하고 즐겁게 살기 위해 열심히 노력해볼게요!&lt;/p&gt;
-&lt;p&gt;- 미래의 리더 개발자 정지영&lt;/p&gt;
-&lt;/p&gt;</content><author><name></name></author><category term="intro" /><category term="intro" /><summary type="html">Jung-Log 시작하기</summary></entry><entry><title type="html">ARCORE by Google</title><link href="http://localhost:4000/app/2021/11/30/first.html" rel="alternate" type="text/html" title="ARCORE by Google" /><published>2021-11-30T00:55:25+09:00</published><updated>2021-11-30T00:55:25+09:00</updated><id>http://localhost:4000/app/2021/11/30/first</id><content type="html" xml:base="http://localhost:4000/app/2021/11/30/first.html">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;(21/07/01 - 21/08/31)&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;1-arkit&quot;&gt;1. ARKIT?&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;iOS 기기를 위한 Apple의 AR 개발 플랫폼&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;→ iOS 기기의 카메라와 움직임들을 어플 또는 게임 내에서 증강 현실을 구현하기 위해 통합하는 프레임워크&lt;/p&gt;
+
+&lt;p&gt;→ ARKIT는 기기의 움직임 추적, 카메라 장면 캡처 등 AR을 구현하기 위해 필요한 기술들을 결합해서 AR구현을 단순화하고, 이렇게 단순화 된 ARKIT 프래임워크를 사용해서 개발자들은 여러 종류의 AR을 기기의 정면, 후면 카메라를 이용해서 구현할 수 있을 것.&lt;/p&gt;
+
+&lt;p&gt;→ 2017년 6월 처음 출시&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e16a9e3f-1882-4bde-92d0-c9f83de7a8df/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T101725Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=d63f645ae7db82e5fb6ff8c931502311408412bfdcb75971a46275f188b01bba&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARKIT&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;💡 ARKIT은 mac 내 Simulator로 구동 불가, ARKIT 사용 위해서는 iOS 11 이상의 기기와 Xcode 9 이상의 개발 환경 필요.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tutorial&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=f3xFpRWZEz8&quot;&gt;https://www.youtube.com/watch?v=f3xFpRWZEz8&lt;/a&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;1-1-arkit-algorithm&quot;&gt;1-1. ARKIT algorithm&lt;/h2&gt;
+
+&lt;p&gt;VIO(Visual-Inertial Odometry)라는 기술을 활용하여 스마트폰이 주변의 실제 환경에 대한 상대적인 위치를 이해한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-모션-추적&quot;&gt;1) 모션 추적&lt;/h3&gt;
+
+&lt;p&gt;→ RGB 카메라 센서에서 오는 시각 데이터와 모션 데이터를 결합하여 accelerometer and gyroscope sensors 고대비의 위치 계산 (스마트폰의 IMU 센서)&lt;/p&gt;
+
+&lt;p&gt;→ 가상 카메라의 위치와 방향을 얻을 수 있다. (Feature points)&lt;/p&gt;
+
+&lt;h3 id=&quot;2-장면-이해&quot;&gt;2) 장면 이해&lt;/h3&gt;
+
+&lt;p&gt;→ 여러 Feature points이 동일 평면에 있는 위치를 이해하는데에 집중&lt;/p&gt;
+
+&lt;p&gt;→ 스마트폰이 감지하는 평면의 위치를 찾을 수 있음&lt;/p&gt;
+
+&lt;h3 id=&quot;3-rendering&quot;&gt;3) Rendering&lt;/h3&gt;
+
+&lt;p&gt;→ 가상의 물체를 고정된 anchor위에 배치&lt;/p&gt;
+
+&lt;p&gt;Arcore가 feature points의 확장에 조금 더 중점을 둔다면,&lt;/p&gt;
+
+&lt;p&gt;Arkit는 feature points들을 이용한 수직, 수평 → 평면 detection에 중점을 둔다. 
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;2-arkit-기능&quot;&gt;2. ARKIT 기능&lt;/h1&gt;
+
+&lt;p&gt;현재 ARKIT은 4까지 (2021/06) 출시된 상황&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ARKIT Framework Tree&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/arkit&quot;&gt;Apple Developer Documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-1-depth-api&quot;&gt;2-1. Depth API&lt;/h2&gt;
+
+&lt;p&gt;아이폰 12 pro부터 탑재된 LIDAR 스캐너 내 고급 장면 인식 기능을 통해 주변 환경에 대한 픽셀당 Depth 정보를 사용할 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;💡 LIDAR : 사물에 레이저를 쏘고 빛이 반사되어 돌아오는 시간을 통해 사물까지 거리 값 (Depth) 측정하는 센서
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;해당 Depth 정보를 Scene Geometry에서 생성된 3D 매시 데이터와 결합하면 가상 3D Object를 즉각적으로 배치하고 실제 환경에 원활하게 혼합하여 가상의 사물 오클루전을 더 사실적으로 구현할 수 있다. 이를 통해 더 정밀한 측정 및 사용자 환경에 효과 적용 등 앱 내에서 새로운 기능을 구현할 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;💡 Occlusion (가림 효과) : 실제 사물 뒤에 가상 contents가 있을 때, 실제 사물에 의해 가상 contents가 가려지도록 하는 효과
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-2-location-anchor&quot;&gt;2-2. Location Anchor&lt;/h2&gt;
+
+&lt;p&gt;유명 랜드마크 및 도시의 곳곳 특정 위치에서 AR 경험을 구현할 수 있다. 위치 Anchor를 통해 특정 위도, 경도 및 고도 좌표에 AR 창작물을 고정할 수 있으며, 사용자는 카메라 렌즈를 통해 실제 물체를 보는 것처럼 가상 물체를 움직이고 다른 시각에서 확인할 수 있다. 
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-3-얼굴-추적-기능-지원-확대&quot;&gt;2-3. 얼굴 추적 기능 지원 확대&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;얼굴 추적 기능&lt;/strong&gt; (얼굴을 인식하고 ARKIT 상 좌표계 (x, y, z) 축 오버레이, 각 눈의 위치 및 방향 추적)에 대한 지원이 iPhone SE를 포함하여 A12 Bionic 칩 이상이 탑재된 모든 기기의 전면 카메라로 확대되어, 더 많은 사용자가 전면 카메라를 사용하여 AR 경험을 즐길 수 있다. TrueDepht 카메라를 사용하여 한번에 최대 3명의 얼굴을 추적하면서 미모티콘 및 Snapchat와 같은 전면 카메라 경험을 지원한다. 
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-4-scene-geometry&quot;&gt;2-4. Scene Geometry&lt;/h2&gt;
+
+&lt;p&gt;Scene Geometry로 바닥, 벽, 천장, 창문, 문, 좌석을 식별하는 레이블을 사용하여 공간의 토폴로지 맵을 만들 수 있다. 이처럼 실제 세계에 대한 심층적 이해를 통해 가상 물체에 대한 사물 occlusion 및 실제 물리적 요소를 구현하고 AR 작업 흐름을 구동하는 데 필요한 정보를 더 많이 얻을 수 있다. 
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-5-lidar-스캐너-이용&quot;&gt;2-5. LIDAR 스캐너 이용&lt;/h2&gt;
+
+&lt;p&gt;LIDAR 스캐너를 사용하여 AR 물체를 스캔 없이 현실 세계에 즉각적으로 배치할 수 있다. 즉각적인 AR 배치 기능은 별도의 코드 변경 없이 iPhone 12 Pro, iPhone 12 Pro Max, iPad Pro에서 ARKIT으로 빌드한 모든 앱에 대해 자동으로 활성화 된다.
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-6-인물-occlusion&quot;&gt;2-6. 인물 occlusion&lt;/h2&gt;
+
+&lt;p&gt;AR 콘텐츠를 현실 세계에 있는 인물의 앞이나 뒤에 사실적으로 표시하면서 AR 경험을 더 몰입감 있게 만드는 동시에 대부분의 환경에서 ‘그린’ 화면 스타일 효과를 적용할 수 있다. Depth 추정은 별도의 코드 변경 없이 iPhone 12 Pro, iPhone 12 Pro Max, iPad Pro에서 ARKIT으로 빌드한 모든 앱에 대해 자동으로 활성화 된다.
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-7-모션-캡처&quot;&gt;2-7. 모션 캡처&lt;/h2&gt;
+
+&lt;p&gt;한 대의 카메라로 사람의 움직임을 실시간으로 캡쳐한다. 몸의 위치와 움직임을 일련의 관절과 뼈로 파악하여 AR 경험에 동작과 자세를 입력하면서 AR의 중심에 인물을 배치할 수 있다. 높이 추정은 별도의 코드 변경 없이, iPhone 12 Pro, iPhone 12 Pro Max, iPad Pro에서 ARKIT으로 빌드한 모든 앱에 대해 자동으로 활성화 된다.
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-8-전-후면-카메라-동시-지원&quot;&gt;2-8. 전 후면 카메라 동시 지원&lt;/h2&gt;
+
+&lt;p&gt;전면 카메라, 후면 카메라로 얼굴과 공간을 동시에 추적할 수 있어 새로운 가능성이 열린다. 예를 들어 사용자는 자신의 얼굴만을 사용해 후면 카메라 뷰에 보이는 AR 콘텐츠와 상호 작용할 수 있다. 
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-9-다중-얼굴-추적&quot;&gt;2-9. 다중 얼굴 추적&lt;/h2&gt;
+
+&lt;p&gt;ARKIT 얼굴 추적 기능은 Apple Neural Engine과 전면 카메라가 탑재된 모든 기기에서 한번에 최대 3명의 얼굴을 추적하면서 미모티콘 및 Snapchat과 같은 AR 경험을 지원한다.
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-10-협업-세션&quot;&gt;2-10. 협업 세션&lt;/h2&gt;
+
+&lt;p&gt;여러 사람들과의 실시간 협업 세션을 사용하여 공동으로 AR 앱을 제작할 수 있으므로 AR 경험을 더욱 빠르게 개발하고 사용자들이 공유 AR 경험을 멀티 플레이어 게임처럼 즐기게 할 수 있다. 
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-11-추가-개선-사항&quot;&gt;2-11. 추가 개선 사항&lt;/h2&gt;
+
+&lt;p&gt;→ 한 번에 최대 100개의 이미지를 인식하고 해당 이미지에 있는 물체의 실제 크기를 자동으로 추정한다.&lt;/p&gt;
+
+&lt;p&gt;→ 복잡한 환경의 물체 인식이 개선되면서 3D 물체 인식이 더 강력해졌다.&lt;/p&gt;
+
+&lt;p&gt;→ 이제 머신 러닝을 사용하여 환경에서 더욱 빠르게 평면을 감지할 수 있다. 
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;3-arkit-or-arcore&quot;&gt;3. ARKIT or ARCORE?&lt;/h1&gt;
+
+&lt;p&gt;→ ARKIT : 2017년 6월&lt;/p&gt;
+
+&lt;p&gt;→ ARCORE : 2018년 3월&lt;/p&gt;
+
+&lt;p&gt;BUT, ARCORE는 TANGO 플랫폼에서 발전한 플랫폼으로 ARKIT에 비해 크게 뒤쳐지지 않음&lt;/p&gt;
+
+&lt;h2 id=&quot;3-1-지원-기능&quot;&gt;3-1. 지원 기능&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0f4fec80-23d7-4527-a8e1-4e059007a621/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T101821Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=ac5056f36119a7bb7e6c2f0d503b7ea308a490a5b95dff69ba19434c83a94e3a&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARKIT2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;기본적으로 제공하는 기능은 거의 동일하나&lt;/p&gt;
+
+&lt;p&gt;ARKIT → 3D Object Tracking / Body Tracking, 전 후면 카메라 동시 지원, Multiple Face Tracking의 &lt;strong&gt;추가적인 SDK 지원&lt;/strong&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-2-범용성&quot;&gt;3-2. 범용성&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ARCORE&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Android, iOS, Windows10에서 전부 구동 가능&lt;/p&gt;
+
+&lt;p&gt;Document → Unity, Unreal, Android, iOS 제공&lt;/p&gt;
+
+&lt;p&gt;Opensource&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ARKIT&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;iOS에서만 구동 가능하며 폐쇄적으로 Document, Opensource 제공 X
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-3-인식-기능-algorithm-방식&quot;&gt;3-3. 인식 기능 (Algorithm 방식)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ARCORE&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Feature Points를 최대한 많이 찾아, Mapping된 공간 영역을 빠르게 확장&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ARKIT&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;수평, 수직으로 평면을 감지하는 기술이 정확
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-4-지원-디바이스&quot;&gt;3-4. 지원 디바이스&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ARCORE&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Google/ 하웨이/ LG/ 삼성/ 샤오미/ Apple 등 폭넓은 디바이스 지원&lt;/p&gt;
+
+&lt;p&gt;→ 하드웨어 성능, 지원하는 센서에 따라 ARCORE 성능이 많이 달라짐&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ARKIT&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;iPhone / iPad 의 iOS 기기만 지원&lt;/p&gt;
+
+&lt;p&gt;→ True Depth 카메라가 장착되어 있어 정확도가 상당히 높은 인식 기술 제공&lt;/p&gt;
+
+&lt;p&gt;→ 특히 LIDAR 부착된 장치의 경우, 고해상도의 Depth Map을 얻을 수 있어 AR 세계의 공간을 분석하고 인식하는 기술이 더욱 향상됨. 
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;4--class&quot;&gt;4.  CLASS&lt;/h1&gt;
+
+&lt;h2 id=&quot;4-1-arconfiguration&quot;&gt;4-1. ARConfiguration&lt;/h2&gt;
+
+&lt;p&gt;→ AR에 필요한 것들을 구성하기 위한 추상 Class.&lt;/p&gt;
+
+&lt;p&gt;→ 이를 상속받은 8개의 서브클래스가 실질적인 작업을 한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/89290f1b-444a-4087-8591-408c673c1a4b/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T101846Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=7f9886431963334cdbd2d8dce6897b945a080d77eb83dde425301ce6fe7120e1&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARKIT3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;→ ARWorldTrackingConfiguration&lt;/p&gt;
+
+&lt;p&gt;ARkit 기본 기능 제공, 사용자가 거주하는 실제 세계를 추적하고 가상 콘텐츠를 배치할 좌표 공간과 일치시킴&lt;/p&gt;
+
+&lt;p&gt;가상의 물체는 현실 세계의 카메라가 어떻게 움직이더라도 같은 곳에 위치해야 한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/943deb0e-4606-4b76-bcfa-dffd342b17d0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T101908Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=5caffd310374995f412b26f9d5ce999af042ec5cf5fe0cf3db921c9c213c649c&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARKIT4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;기기의 움직임을 3개의 회전각(roll, pitch, yaw)과 3개의 변환각 (x, y, z)을 통해 추적한다. 
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;5-scenekit&quot;&gt;5. SCENEKIT&lt;/h1&gt;
+
+&lt;p&gt;Scenekit는 앱에서 3D 애니메이션 장면과 효과를 만드는 데 도움이 되는 고급 3D 그래픽 프래임워크.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f734e9a7-41d8-438b-9833-62630a6a698d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T101924Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=dae484382715ae1604dc36586322649ed1cc47d750939c6a65e783463437fa8a&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARKIT5&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;모바일 환경에서 증강현실 혹은 3D 모델 랜더링을 요하는 어플리케이션을 개발할 때, OpenGL이나 Apple의 Metal과 같은 그래픽 API들을 표준으로 삼음.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;하지만 개발 시 매우 어려운 난이도나, 비효율성 등의 여러 문제 때문에 graphics rendering engine을 필요로 함 → &lt;strong&gt;SpriteKit, SceneKit&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;5-1-spritekit&quot;&gt;5-1. SpriteKit&lt;/h2&gt;
+
+&lt;p&gt;→ 단순 규모에서 2D 애니메이션을 위해 디자인 됨.&lt;/p&gt;
+
+&lt;p&gt;→ 개발자들에게 2D 애니메이션을 위한 모든 툴 제공.
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;5-2-scenekit&quot;&gt;5-2. SceneKit&lt;/h2&gt;
+
+&lt;p&gt;→ Core Animation Framework를 기반으로, SpriteKit에 비해 고성능 옵션을 제공하며, 사용시 상당한 수학과 기하학 요구&lt;/p&gt;
+
+&lt;p&gt;→ high-level 3D graphics framework로서, rendering engine과 descriptive API로 움직이는 장면을 만들기 위해 사용된다.&lt;/p&gt;
+
+&lt;p&gt;→ Metal과 같은 lower-level-API보다는 복잡하다.&lt;/p&gt;
+
+&lt;p&gt;→ Loin OS에서 배포되었으며, 개발자들이 보다 쉽게 복잡한 3D 장면을 만들 수 있도록 디자인 됨.&lt;/p&gt;
+
+&lt;p&gt;→ VR 용으로 고안되엇으며 ARKIT과 함께 사용할 수 밖에 없음.&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;@IBOutlet&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;weak&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;sceneView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;SCNView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;sceneView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scene&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;SCNScene&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sceneView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;autoenablesDefaultLighting&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;boxNode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;SCNNode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;boxNode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geometry&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;SCNBox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;chamferRadius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;boxNode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geometry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;firstMaterial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lightingModel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;physicallyBased&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;boxNode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geometry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;firstMaterial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;diffuse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;contents&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UIColor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;red&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;boxNode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geometry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;firstMaterial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;metalness&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;contents&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;sceneView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scene&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rootNode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;addChildNode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;boxNode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;→ 기본 View는 SCNView&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;보통 AR 증강현실 APP에서는 SceneKit를 사용해 왔음.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;→ SceneKit은 Contents들을 트리구조를 활용해서 실행.&lt;/p&gt;
+
+&lt;p&gt;→ root 노드는 시각적인 요소를 가지지 않으며, 해당 Scene world의 좌표를 정함.&lt;/p&gt;
+
+&lt;p&gt;→ 자식 노드들은 root 노드의 scene world 내에서 시각적인 요소로 존재하는 원리.&lt;/p&gt;
+
+&lt;aside&gt;
+💡 Node (SCNNode) : root노드에 상대적인 좌표 위치 변환 속성을 제공함 (position, orientation, scale)
+
+&lt;/aside&gt;
+
+&lt;p&gt;→ 보는 방향이 -z축 방향을 가리키는 우회 좌표계를 사용한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0500914b-4c24-443a-8702-a059a6b1d51d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T101941Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=9051302c6c9808c9a8ade6aaab6d427816d1f1cdb2f824d2c6f41b33c458df4e&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARKIT6&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;SCENEKIT은 2017년 이후로 더 이상 업데이트 되지 않음&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;→ 점점 사라질 예정&lt;/p&gt;
+
+&lt;p&gt;→ 하지만 아직도 RealityKit 2.0보다 몇몇 이점이 존재한다. 
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;6-realitykit-20&quot;&gt;6. RealityKit 2.0&lt;/h1&gt;
+
+&lt;p&gt;기본 ARKit 통합, 물리적 요소 기반의 랜더링, 변형 및 스켈레톤 애니메이션, 공간 오디오 및 강체 물리 요소를 통해 AR 개발을 빠르고 쉽게 수행할 수 있게 해주는 프레임워크.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/12284363-6f7d-475e-8bc8-1f9e184a9e45/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T102000Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=143593cf85739e7bf8fe3d5b18d8c8dd04763f57bf87088c5cd52ba142e630a4&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARKIT7&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;→ Apple의 랜더링 기술 제품군에서 가장 최신 SDK (2019년 출시)&lt;/p&gt;
+
+&lt;p&gt;→ AR/ VR 프로젝트 용으로 제작되었으며, iOS, mac에서 사용 가능&lt;/p&gt;
+
+&lt;p&gt;→ 다중 스레드 렌더링&lt;/p&gt;
+
+&lt;p&gt;→ LIDAR 스캐너 지원&lt;/p&gt;
+
+&lt;p&gt;→ 독립적으로 사용 가능하며, ARKIT, MetalKit와 함께 사용할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;→ iPhone OS 15에서부터 접근 가능&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;@IBOutlet&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;weak&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;arView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;ARView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;box&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;MeshResource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;generateBox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;material&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;PhysicallyBasedMaterial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;ModelEntity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;mesh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;materials&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;material&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;anchor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AnchorEntity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;world&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;anchor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;addChild&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;arView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scene&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;anchors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;anchor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;→ 기본 View는 ARView&lt;/p&gt;</content><author><name></name></author><category term="Application" /><category term="ARKit" /><category term="Hanssem" /><category term="ar" /><summary type="html">본 게시물은 2021.07 ~ 08 한샘에서 AR 가구 배치 어플리케이션을 개발할 때, 공부했던 내용입니다. Hanssem AR(Augmented Reality) Placement application development</summary></entry><entry><title type="html">ARCORE by Google</title><link href="http://localhost:4000/application/2021/11/30/ARcore.html" rel="alternate" type="text/html" title="ARCORE by Google" /><published>2021-11-30T19:04:25+09:00</published><updated>2021-11-30T19:04:25+09:00</updated><id>http://localhost:4000/application/2021/11/30/ARcore</id><content type="html" xml:base="http://localhost:4000/application/2021/11/30/ARcore.html">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;본 게시물은 2021.07 ~ 08 한샘에서 AR 가구 배치 어플리케이션을 개발할 때, 공부했던 내용입니다.&lt;/li&gt;
   &lt;li&gt;Hanssem AR(Augmented Reality) Placement application development&lt;/li&gt;
@@ -276,4 +599,16 @@
   &lt;li&gt;Renderable&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Node(하나의 Object가 차지하는 영역)에 연결하여 하나의 Object를 3D 공간에서 rendering 하기 위한 기본 Class&lt;/p&gt;</content><author><name></name></author><category term="App" /><category term="ARCORE" /><category term="Hanssem" /><category term="ar" /><summary type="html">본 게시물은 2021.07 ~ 08 한샘에서 AR 가구 배치 어플리케이션을 개발할 때, 공부했던 내용입니다. Hanssem AR(Augmented Reality) Placement application development</summary></entry></feed>
+&lt;p&gt;Node(하나의 Object가 차지하는 영역)에 연결하여 하나의 Object를 3D 공간에서 rendering 하기 위한 기본 Class&lt;/p&gt;</content><author><name></name></author><category term="Application" /><category term="ARCORE" /><category term="Hanssem" /><category term="ar" /><summary type="html">본 게시물은 2021.07 ~ 08 한샘에서 AR 가구 배치 어플리케이션을 개발할 때, 공부했던 내용입니다. Hanssem AR(Augmented Reality) Placement application development</summary></entry><entry><title type="html">Jung-Log</title><link href="http://localhost:4000/intro/" rel="alternate" type="text/html" title="Jung-Log" /><published>2021-11-30T00:55:25+09:00</published><updated>2021-11-30T00:55:25+09:00</updated><id>http://localhost:4000/Introduce</id><content type="html" xml:base="http://localhost:4000/intro/">&lt;h3&gt;Jung-Log 시작하기&lt;/h3&gt;
+
+&lt;p&gt;👩‍💻 안녕하세요 정지영입니다.&lt;/p&gt;
+&lt;p&gt;📚 동국대학교 소프트웨어 구조 연구실 학부 연구생입니다.
+&lt;p&gt;💻 웹과 앱 개발을 하고 싶어요 &lt;/p&gt;
+&lt;p&gt;💻 특히 JavaScript와 Swift에 관심이 많습니다. &lt;/p&gt;&lt;br /&gt;
+&lt;p&gt;새로 알게 되는 것들, 배운 것들을 정리할 공간이 필요하다고 막연하게만 생각했는데, 드디어 블로그를 시작하게 되었습니다.&lt;br /&gt;
+&lt;br /&gt;고민할 시간에 부딫히며 몰입하고, 주변 사람들을 소중히 여기며 일하는 개발자가 되고 싶습니다. 개발을 하는 것이 전부가 아닌, 끊임없는 성장을 위해 달리고자 합니다.
+&lt;br /&gt;이를 위해 수많은 실패에도 좌절하지 않고, 배울 점을 전부 뽑을 때까지 돌려보내고 싶지 않습니다. 저는 패배주의에서 벗어나고, 운을 끌어들이는 삶을 살고 싶기 때문이죠.&lt;br /&gt;
+&lt;br /&gt;개발자로 일하며 제 성과에 대한 인정을 받을 때, 저는 가장 행복한 삶을 살아갈 수 있을 것 같습니다.&lt;br /&gt;
+행복하고 즐겁게 살기 위해 열심히 노력해볼게요!&lt;/p&gt;
+&lt;p&gt;- 미래의 리더 개발자 정지영&lt;/p&gt;
+&lt;/p&gt;</content><author><name></name></author><category term="Introduce" /><category term="intro" /><summary type="html">Jung-Log 시작하기</summary></entry><entry><title type="html">Category</title><link href="http://localhost:4000/categories/" rel="alternate" type="text/html" title="Category" /><published>2021-11-30T00:55:25+09:00</published><updated>2021-11-30T00:55:25+09:00</updated><id>http://localhost:4000/second</id><content type="html" xml:base="http://localhost:4000/categories/"></content><author><name></name></author><category term="categories" /><summary type="html"></summary></entry></feed>
