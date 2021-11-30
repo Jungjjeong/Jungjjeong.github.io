@@ -1,0 +1,37 @@
+I"�<p>두번째 github.io 기술 블로그 게시물입니다.
+한국어 가독성이 좋은지 확인하려 해요.</p>
+
+<h1 id="우아한-테크코스-프리코스-1주차">우아한 테크코스 프리코스 1주차</h1>
+
+<h2 id="구현-기능-목록">💻구현 기능 목록</h2>
+
+<ul>
+  <li>컴퓨터는 <code class="language-plaintext highlighter-rouge">1~9</code> 사이의 숫자 3개 랜덤 생성.</li>
+  <li>사용자가 3자리가 아닌 숫자나 <code class="language-plaintext highlighter-rouge">0</code>을 포함한 경우, 또는 문자를 입력했을 경우.
+    <ul>
+      <li>alert 창 에러 메세지 출력</li>
+      <li>다시 입력 받을 수 있게 초기화</li>
+    </ul>
+  </li>
+  <li>사용자가 입력한 3자리의 숫자와 컴퓨터의 랜덤한 숫자를 비교.
+    <ul>
+      <li><strong>스트라이크</strong> : 같은 수가 같은 자리에 있음</li>
+      <li><strong>볼</strong> : 같은 수가 다른 자리에 있음</li>
+      <li><strong>낫싱</strong> : 같은 수, 같은 자리가 전혀 없음</li>
+      <li><strong>숫자가 틀릴 경우 :</strong>  입력창, 확인버튼, 알림창 재생성.</li>
+    </ul>
+  </li>
+  <li>스트라이크, 볼, 낫싱을 경우에 맞게 출력
+    <ul>
+      <li>스트라이크와 볼이 둘 다 있을 경우, 볼 먼저 출력</li>
+    </ul>
+  </li>
+  <li>숫자가 일치할 경우.
+    <ul>
+      <li>게임 종료</li>
+      <li>재시작 버튼 클릭 이벤트 구현</li>
+      <li>test</li>
+    </ul>
+  </li>
+</ul>
+:ET

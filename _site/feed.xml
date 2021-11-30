@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-30T13:05:22+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jung-Log</title><subtitle>즐겁게 사는 개발자 지영입니다.</subtitle><entry><title type="html">첫 Github.io 게시물입니다.</title><link href="http://localhost:4000/jekyll/update/2021/11/30/welcome-to-jekyll.html" rel="alternate" type="text/html" title="첫 Github.io 게시물입니다." /><published>2021-11-30T00:55:25+09:00</published><updated>2021-11-30T00:55:25+09:00</updated><id>http://localhost:4000/jekyll/update/2021/11/30/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/11/30/welcome-to-jekyll.html">&lt;p&gt;첫 github.io 기술 블로그 게시물입니다.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-30T15:05:10+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jung-Log</title><subtitle>즐겁게 사는 개발자 지영입니다.</subtitle><entry><title type="html">두번째 Github.io 게시물입니다.</title><link href="http://localhost:4000/update/2021/11/30/second.html" rel="alternate" type="text/html" title="두번째 Github.io 게시물입니다." /><published>2021-11-30T00:55:25+09:00</published><updated>2021-11-30T00:55:25+09:00</updated><id>http://localhost:4000/update/2021/11/30/second</id><content type="html" xml:base="http://localhost:4000/update/2021/11/30/second.html">&lt;p&gt;jekyll 구조 파악중&lt;/p&gt;</content><author><name></name></author><category term="update" /><category term="update" /><summary type="html">jekyll 구조 파악중</summary></entry><entry><title type="html">Jung-Log</title><link href="http://localhost:4000/intro/" rel="alternate" type="text/html" title="Jung-Log" /><published>2021-11-30T00:55:25+09:00</published><updated>2021-11-30T00:55:25+09:00</updated><id>http://localhost:4000/Introduce</id><content type="html" xml:base="http://localhost:4000/intro/">&lt;h3&gt;Jung-Log 시작하기&lt;/h3&gt;
+
+&lt;p&gt;👩‍💻 안녕하세요 정지영입니다.&lt;/p&gt;
+&lt;p&gt;📚 동국대학교 소프트웨어 구조 연구실 학부 연구생입니다.
+&lt;p&gt;💻 웹과 앱 개발을 하고 싶어요 &lt;/p&gt;
+&lt;p&gt;💻 특히 JavaScript와 Swift에 관심이 많습니다. &lt;/p&gt;&lt;br /&gt;
+&lt;p&gt;새로 알게 되는 것들, 배운 것들을 정리할 공간이 필요하다고 막연하게만 생각했는데, 드디어 블로그를 시작하게 되었습니다.&lt;br /&gt;
+&lt;br /&gt;고민할 시간에 부딫히며 몰입하고, 주변 사람들을 소중히 여기며 일하는 개발자가 되고 싶습니다. 개발을 하는 것이 전부가 아닌, 끊임없는 성장을 위해 달리고자 합니다.
+&lt;br /&gt;이를 위해 수많은 실패에도 좌절하지 않고, 배울 점을 전부 뽑을 때까지 돌려보내고 싶지 않습니다. 저는 패배주의에서 벗어나고, 운을 끌어들이는 삶을 살고 싶기 때문이죠.&lt;br /&gt;
+&lt;br /&gt;개발자로 일하며 제 성과에 대한 인정을 받을 때, 저는 가장 행복한 삶을 살아갈 수 있을 것 같습니다.&lt;br /&gt;
+행복하고 즐겁게 살기 위해 열심히 노력해볼게요!&lt;/p&gt;
+&lt;p&gt;- 미래의 리더 개발자 정지영&lt;/p&gt;
+&lt;/p&gt;</content><author><name></name></author><category term="update" /><category term="update" /><summary type="html">Jung-Log 시작하기</summary></entry><entry><title type="html">첫 Github.io 게시물입니다.</title><link href="http://localhost:4000/update/2021/11/30/first.html" rel="alternate" type="text/html" title="첫 Github.io 게시물입니다." /><published>2021-11-30T00:55:25+09:00</published><updated>2021-11-30T00:55:25+09:00</updated><id>http://localhost:4000/update/2021/11/30/first</id><content type="html" xml:base="http://localhost:4000/update/2021/11/30/first.html">&lt;p&gt;첫 github.io 기술 블로그 게시물입니다.
 한국어 가독성이 좋은지 확인하려 해요.&lt;/p&gt;
 
 &lt;h1 id=&quot;우아한-테크코스-프리코스-1주차&quot;&gt;우아한 테크코스 프리코스 1주차&lt;/h1&gt;
@@ -33,4 +45,4 @@
       &lt;li&gt;test&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">첫 github.io 기술 블로그 게시물입니다. 한국어 가독성이 좋은지 확인하려 해요.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="update" /><category term="update" /><summary type="html">첫 github.io 기술 블로그 게시물입니다. 한국어 가독성이 좋은지 확인하려 해요.</summary></entry></feed>

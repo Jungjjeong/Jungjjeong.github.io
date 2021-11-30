@@ -1,6 +1,10 @@
 - title : Home
   url : / 
-- title : About 
-  url : /about/ 
-- title : post
-  url : /update/
+- title : Introduce
+  url : /intro/
+- title : Web
+  url : /web/
+- title : App
+  url : /app/
+- title : Post
+  url : "update"
