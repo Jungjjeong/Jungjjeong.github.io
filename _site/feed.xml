@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-30T15:06:03+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jung-Log</title><subtitle>즐겁게 사는 개발자 지영입니다.</subtitle><entry><title type="html">두번째 Github.io 게시물입니다.</title><link href="http://localhost:4000/update/2021/11/30/second.html" rel="alternate" type="text/html" title="두번째 Github.io 게시물입니다." /><published>2021-11-30T00:55:25+09:00</published><updated>2021-11-30T00:55:25+09:00</updated><id>http://localhost:4000/update/2021/11/30/second</id><content type="html" xml:base="http://localhost:4000/update/2021/11/30/second.html">&lt;p&gt;jekyll 구조 파악중&lt;/p&gt;</content><author><name></name></author><category term="update" /><category term="update" /><summary type="html">jekyll 구조 파악중</summary></entry><entry><title type="html">Jung-Log</title><link href="http://localhost:4000/intro/" rel="alternate" type="text/html" title="Jung-Log" /><published>2021-11-30T00:55:25+09:00</published><updated>2021-11-30T00:55:25+09:00</updated><id>http://localhost:4000/Introduce</id><content type="html" xml:base="http://localhost:4000/intro/">&lt;h3&gt;Jung-Log 시작하기&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-30T15:54:46+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jung-Log</title><subtitle>즐겁게 사는 개발자 지영입니다.</subtitle><entry><title type="html">두번째 Github.io 게시물입니다.</title><link href="http://localhost:4000/update/2021/11/30/second.html" rel="alternate" type="text/html" title="두번째 Github.io 게시물입니다." /><published>2021-11-30T00:55:25+09:00</published><updated>2021-11-30T00:55:25+09:00</updated><id>http://localhost:4000/update/2021/11/30/second</id><content type="html" xml:base="http://localhost:4000/update/2021/11/30/second.html">&lt;p&gt;jekyll 구조 파악중&lt;/p&gt;</content><author><name></name></author><category term="update" /><category term="update" /><summary type="html">jekyll 구조 파악중</summary></entry><entry><title type="html">Jung-Log</title><link href="http://localhost:4000/intro/" rel="alternate" type="text/html" title="Jung-Log" /><published>2021-11-30T00:55:25+09:00</published><updated>2021-11-30T00:55:25+09:00</updated><id>http://localhost:4000/Introduce</id><content type="html" xml:base="http://localhost:4000/intro/">&lt;h3&gt;Jung-Log 시작하기&lt;/h3&gt;
 
 &lt;p&gt;👩‍💻 안녕하세요 정지영입니다.&lt;/p&gt;
 &lt;p&gt;📚 동국대학교 소프트웨어 구조 연구실 학부 연구생입니다.
@@ -10,39 +10,268 @@
 &lt;br /&gt;개발자로 일하며 제 성과에 대한 인정을 받을 때, 저는 가장 행복한 삶을 살아갈 수 있을 것 같습니다.&lt;br /&gt;
 행복하고 즐겁게 살기 위해 열심히 노력해볼게요!&lt;/p&gt;
 &lt;p&gt;- 미래의 리더 개발자 정지영&lt;/p&gt;
-&lt;/p&gt;</content><author><name></name></author><category term="update" /><category term="update" /><summary type="html">Jung-Log 시작하기</summary></entry><entry><title type="html">첫 Github.io 게시물입니다.</title><link href="http://localhost:4000/update/2021/11/30/first.html" rel="alternate" type="text/html" title="첫 Github.io 게시물입니다." /><published>2021-11-30T00:55:25+09:00</published><updated>2021-11-30T00:55:25+09:00</updated><id>http://localhost:4000/update/2021/11/30/first</id><content type="html" xml:base="http://localhost:4000/update/2021/11/30/first.html">&lt;p&gt;첫 github.io 기술 블로그 게시물입니다.
-한국어 가독성이 좋은지 확인하려 해요.&lt;/p&gt;
+&lt;/p&gt;</content><author><name></name></author><category term="intro" /><category term="intro" /><summary type="html">Jung-Log 시작하기</summary></entry><entry><title type="html">ARCORE by Google</title><link href="http://localhost:4000/app/2021/11/30/first.html" rel="alternate" type="text/html" title="ARCORE by Google" /><published>2021-11-30T00:55:25+09:00</published><updated>2021-11-30T00:55:25+09:00</updated><id>http://localhost:4000/app/2021/11/30/first</id><content type="html" xml:base="http://localhost:4000/app/2021/11/30/first.html">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;본 게시물은 2021.07 ~ 08 한샘에서 AR 가구 배치 어플리케이션을 개발할 때, 공부했던 내용입니다.&lt;/li&gt;
+  &lt;li&gt;Hanssem AR(Augmented Reality) Placement application development&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h1 id=&quot;우아한-테크코스-프리코스-1주차&quot;&gt;우아한 테크코스 프리코스 1주차&lt;/h1&gt;
+&lt;p&gt;(21/07/01 - 21/08/31)&lt;/p&gt;
 
-&lt;h2 id=&quot;구현-기능-목록&quot;&gt;💻구현 기능 목록&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;1-arcore-&quot;&gt;1. ARCORE ?&lt;/h1&gt;
+
+&lt;p&gt;ARCORE은 AR 경험을 빌드하기 위한 Google의 플랫폼이며, 다양한 API를 사용하여 휴대폰에서 가상 contents를 볼 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;💡 Android 7.0 (Nougat) 이상 Android 휴대폰에서 작동하도록 설계.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;기본적으로 ARCORE는 두 가지 작업을 수행한다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;모바일 장치가 이동할 때 그 위치를 추적한다.&lt;/li&gt;
+  &lt;li&gt;실제 세계에 대한 지속적인 이해를 구축한다. 
+&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;▶ ARCORE의 동작 추적 기술은 Android 카메라를 사용하여 features(Interesting points)를 추출한다. 또한 해당 points들의 시간에 따른 움직임을 추적한다.&lt;/p&gt;
+
+&lt;p&gt;▶ points들을 추출하는 것 뿐만 아닌, plain(평면) detection을 감지할 수 있고, 주변 영역의 평균 조명 값을 추정할 수 있다. ARCORE는 이러한 모든 기능들이 결합되어, 카메라로 실제로 촬영되는 공간에 대한 자체 이해를 구축한다. 따라서 촬영되는 현실 세계에 대한 구축된 이해를 바탕으로 객체, 주석, 또는 기타 정보 등을 가상으로 배치할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8ced052f-6b5c-45bc-8419-f09c13da8051/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T063243Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=a0e3d37e958a9e068fc6b2ca4047333273da48087e44eeb4f231411ead4b880f&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARCORE Flow&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;2-fundamental-concepts&quot;&gt;2. Fundamental concepts&lt;/h1&gt;
+
+&lt;h3 id=&quot;2-1-motion-tracking&quot;&gt;2-1. Motion tracking&lt;/h3&gt;
+
+&lt;p&gt;실제 환경을 촬영하고 있는 핸드폰이 움직일 때, ARCORE은 ‘simultaneous localization and mapping’ (= SLAM) 이라는 process를 사용하여 주변 환경과 관련된 위치를 파악한다. ARCORE는 카메라의 이미지에서 시각적으로 구분되는 특징인 ‘Feature points’를 감지하고 이를 통하여 위치의 변화를 감지한다.  해당 points들은 IMU(관성 측정 장비)의 관성 측정치와 결합되며, 시간이 지남에 따라 전 세계를 기준으로 현재 카메라가 촬영하고 있는 장소의 ‘Pose’ (Position and Orientation)를 추정하게 된다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;💡 SLAM은 주로 자율 주행 차량에 사용되며, 기기의 주변 환경 지도를 작성하는 동시에, 기기의 위치를 작성된 지도 안에서 인식하는 기법이다. 
+이 알고리즘을 통해 기기는 미지의 환경에 대한 지도를 작성할 수 있으며, 엔지니어는 지도 정보를 활용하여 환경 파악 및 장애물 회피 등의 작업을 수행할 수 있다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;💡 SLAM process는 조금 더 광범위한 의미로 COM(concurrent odometry and mapping) process라고도 불린다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;▶ 3D contents를 rendering하는 가상 카메라의 Pose와 ARCORE에서 제공하는 나의 핸드폰 장치 카메라의  Pose를 일치 시킨다. 따라서 개발자는 올바른 위치에 가상 3D contents를  rendering할 수 있으며, 핸드폰 장치에서 촬영되고 있는 화면과 rendering되는 가상 이미지가 겹쳐져 가상 contents가 실제 촬영되고 있는 세계의 일부인 것처럼 보이게 한다.
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-2-environmental-understanding&quot;&gt;2-2. Environmental understanding&lt;/h3&gt;
+
+&lt;p&gt;ARCORE는 feature points와 plane(평면)을 감지함으로써 현실 세계에 대한 이해도를 지속적으로 높인다.&lt;/p&gt;
+
+&lt;p&gt;ARCORE는 테이블이나 벽과 같은 일반적인 수직이나 수평의 표면에 있는 것처럼 보이는 feature points의 cluster(군집들)를 찾고, 이러한 표면들을 APP 상에서 plane으로 사용할 수 있도록 한다. ARCORE는 또한 각 평면의 경계를 결정하고, 해당 정보를 앱에 제공할 수 있다. 따라서 평면과, 평면의 경계 등의 여러 정보들을 사용하여 plane에 가상 개체를 배치할 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;💡 ARCORE는 feature points(시각적으로 구분되는 점)들을 사용하여 plane을 감지하기 때문에, 
+질감과 물건이 없는 흰색 벽, 평면은 제대로 감지되지 않을 수 있다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-3-depth-understanding&quot;&gt;2-3. Depth understanding&lt;/h3&gt;
+
+&lt;p&gt;ARCORE는 지원되는 Android 장치의 기본 RGB 카메라를 사용하여 points들과 표면 사이의 거리에 대한 데이터를 포함하는 깊이 맵을 만들 수 있다. 깊이 맵에서 제공하는 정보를 사용하여 가상 contents를 관찰된 표면과 정확하게 맞닿게 하거나, 실제 개체의 앞이나 뒤에 표시되도록 하는 등, 사실적인 사용자 화면을 구현할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://codelabs.developers.google.com/codelabs/arcore-depth?hl=ko#0&quot;&gt;ARCore 깊이 | Google Codelabs&lt;/a&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-4-light-estimation&quot;&gt;2-4. Light estimation&lt;/h3&gt;
+
+&lt;p&gt;ARCORE는 환경의 조명에 대한 정보를 감지하고, 주어진 카메라 이미지에 대한 평균 강도와 색상 보정을 제공할 수 있다. 해당 정보를 사용하여 주변 환경과 동일한 조건에서 가상 contents를 비추어 현실감을 높인다. 
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-5-user-interaction&quot;&gt;2-5. User interaction&lt;/h3&gt;
+
+&lt;p&gt;ARCORE는 hit testing을 사용하여 휴대 전화 화면상의 (x, y) 좌표를 취하고, 카메라의 세계에서 광선을 투과하여 모든 평면과 광선이 교차하는 feature points, 세계 공간에서 교차하는 pose들을 활용하여 사용자는 환경에서 개체를 선택하거나 다른 방식으로 상호작용 할 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;💡 Hit testing은 적중 테스트라고 하며, 포인트(터치 포인트 등)이 화면에 그려진 그래픽 객체(UIView 등)과 만나는지 여부를 결정하는 Process이다. 
+사용자가 기기 화면을 Tap하면 ARCORE는 해당 (x,y) 좌표에서 광선이 뻗어나간다 가정하고, 
+해당 광선이 교차하는 모든 plane, feature points, pose를 반환한다. 
+해당 결과로 Anchor를 만들게 된다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Create a hit test using the Depth API.&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;HitResult&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hitResultList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;frame&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;hitTest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;HitResult&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hitResultList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt; &lt;/span&gt; &lt;span class=&quot;err&quot;&gt; &lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Trackable&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;trackable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getTrackable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt; &lt;/span&gt; &lt;span class=&quot;err&quot;&gt; &lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;trackable&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;instanceof&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Plane&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt; &lt;/span&gt; &lt;span class=&quot;err&quot;&gt; &lt;/span&gt; &lt;span class=&quot;err&quot;&gt; &lt;/span&gt; &lt;span class=&quot;err&quot;&gt; &lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;trackable&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;instanceof&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Point&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt; &lt;/span&gt; &lt;span class=&quot;err&quot;&gt; &lt;/span&gt; &lt;span class=&quot;err&quot;&gt; &lt;/span&gt; &lt;span class=&quot;err&quot;&gt; &lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;trackable&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;instanceof&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DepthPoint&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt; &lt;/span&gt; &lt;span class=&quot;err&quot;&gt; &lt;/span&gt; &lt;span class=&quot;err&quot;&gt; &lt;/span&gt; &lt;span class=&quot;err&quot;&gt; &lt;/span&gt; &lt;span class=&quot;err&quot;&gt; &lt;/span&gt; &lt;span class=&quot;err&quot;&gt; &lt;/span&gt; &lt;span class=&quot;n&quot;&gt;doSomething&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;createAnchor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt; &lt;/span&gt; &lt;span class=&quot;err&quot;&gt; &lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;→ Android App에서 Depth function 사용 시 Hit testing
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-6-oriented-points&quot;&gt;2-6. Oriented points&lt;/h3&gt;
+
+&lt;p&gt;방향이 지정된 점을 사용하여 각진 표면에 가상 contents를 배치할 수 있다. 여러 points를 반환하는 hit testing을 수행할 때, ARCORE는 가까운 feature points를 보고, 이를 사용하여 주어진 feature points에서 표면의 각도를 추정한다. ARCORE는 해당 각도를 고려한 pose를 반환한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;Pose&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;objectPose&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;currentAnchor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getPose&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;→ .getPose(); 사용하여 특정 Point의 Pose 반환 가능&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;💡 ARCORE는 표면의 각도를 감지하기 위해 feature points를 사용하기 때문에, 흰색 벽과 같은 질감이 없는 표면은 제대로 감지되지 않을 수 있다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-7-anchors-and-trackables&quot;&gt;2-7. Anchors and trackables&lt;/h3&gt;
+
+&lt;p&gt;ARCORE가 자신의 위치와 환경에 대한 이해를 향상 시키면서 pose가 변경될 수 있다. 가상 objects를 배치하려면 ARCORE가 시간이 경과됨에 따라 개체의 위치를 추적하도록 가상의 마커 역할을 하는 ‘Anchor’를 정의해야 한다. 보통 hit testing에서 반환된 pose를 기반으로 Anchor를 만들고 사용한다.&lt;/p&gt;
+
+&lt;p&gt;pose가 변경될 수 있다는 사실은, ARCORE가 시간이 지남에 따라 평면과 feature points와 같은 환경적 object들에 대한 위치 변경 정보를 업데이트 할 수 있다는 의미이다. plane들과 points는 ‘trackable’라고 불리는 특수한 타입의 object들이다. 이름에서 알 수 있듯이 이는 ARCORE가 시간이 지남에 따라 추적할 개체들이다. 가상 object들을 ‘trackable’ object들에 고정하여 휴대폰 장치가 움직일 때에도, 둘 사이의 관계는 안정적으로 유지되도록 할 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;💡 Anchor는 CPU costs를 발생시키므로, 가능하면 재사용하며 더 이상 필요하지 않을 시 detach한다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/eee43188-bb4d-4b44-ac6a-d2fa1d7e7051/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T063933Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=617914cd02ac4ff0db6d8d5d8a5830b176dd4eaf8a2c3764872b43fc666290ce&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARCORE Flow2&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;Anchor&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;anchor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hitResult&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;createAnchor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; 
+&lt;span class=&quot;c1&quot;&gt;// plane tap시 hitresult 에서 anchor 생성&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;AnchorNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;anchorNode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AnchorNode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;anchor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; 
+&lt;span class=&quot;c1&quot;&gt;// 공간에 anchor을 기반으로 자동으로 배치되는 Node(Node : 하나의 오브젝트가 차지하는 영역)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;anchorNode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setParent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arFragment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getArSceneView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getScene&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// (getScene : 장면 반환 / getArSceneView : 장면 랜더링(arsceneview) 반환) &lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// -&amp;gt; parentNode로 set&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-8-augmented-images&quot;&gt;2-8. Augmented Images&lt;/h3&gt;
+
+&lt;p&gt;Augmented Images는 특정 2D 이미지에 응답할 수 있는 AR app을 구축하는 기능이다. 사용자가 휴대 전화의 카메라로 특정 이미지를 촬영할 때, AR 경험을 트리거할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;ARCORE는 흔들리는 2D 이미지 또한 추적할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;이미지를 오프라인으로 컴파일하여 이미지 데이터베이스를 만들거나, 개별 이미지를 장치에서 실시간으로 추가할 수 있다. 해당 이미지가 등록될 때 마다, ARCORE는 이러한 이미지, 이미지의 경계들을 감지하고 해당 pose를 반환하게 된다. 
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-9-sharing&quot;&gt;2-9. Sharing&lt;/h3&gt;
+
+&lt;p&gt;ARCORE Cloud Anchor API를 사용하여 Android 및 iOS장치 용 협업 또는 멀티 플레이어 앱을 만들 수 있다.&lt;/p&gt;
+
+&lt;p&gt;하나의 장치가 hosting을 위해 Anchor와 주변 feature points를 cloud로 전송한다. 이러한 Anchor는 동일한 환경의 Android 또는 iOS 장치에서 다른 사용자와 공유할 수 있다. 이를 통해 app은 이러한 Anchor에 연결된 동일한 3D object를 rendering하여 사용자가 동시에 동일한 AR 경험을 가질 수 있다.
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-10-arcore-elements&quot;&gt;2-10. ARCORE ELEMENTS&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/11aad0b8-7ea8-4128-bf98-402b1ae6f5d9/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T063955Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=4f290e2d67132c03a31b547e0de86b80f264160b360307efd02d81879fc8c8ae&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARCORE&quot; /&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;3-arcore--opengl&quot;&gt;3. ARCORE + OPENGL&lt;/h1&gt;
+
+&lt;h3 id=&quot;3-1-open-graphics-library--opengl&quot;&gt;3-1. Open Graphics Library = OpenGL&lt;/h3&gt;
+
+&lt;p&gt;3D 그래픽인 3차원 그래픽 응용프로그램을 만들기 위한 API이며, 여러 기능 지원.&lt;/p&gt;
+
+&lt;p&gt;→ 점, 선, 면 등과 같은 3차원 요소와 비트맵 등의 2차원 요소의 표현, 변환, 행렬을 통한 이들 요소의 변형&lt;/p&gt;
+
+&lt;p&gt;→ RGBA 모델과 INDEXED COLOR모델에 의한 색상 지원&lt;/p&gt;
+
+&lt;p&gt;→ 다양한 조명과 쉐이딩 설정&lt;/p&gt;
+
+&lt;p&gt;→ 텍스쳐 매핑&lt;/p&gt;
+
+&lt;p&gt;→ Antialiasing, Blending, Motion Blur… 등등
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-2-why-not&quot;&gt;3-2. Why Not&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;컴퓨터는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1~9&lt;/code&gt; 사이의 숫자 3개 랜덤 생성.&lt;/li&gt;
-  &lt;li&gt;사용자가 3자리가 아닌 숫자나 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;을 포함한 경우, 또는 문자를 입력했을 경우.
-    &lt;ul&gt;
-      &lt;li&gt;alert 창 에러 메세지 출력&lt;/li&gt;
-      &lt;li&gt;다시 입력 받을 수 있게 초기화&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;사용자가 입력한 3자리의 숫자와 컴퓨터의 랜덤한 숫자를 비교.
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;스트라이크&lt;/strong&gt; : 같은 수가 같은 자리에 있음&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;볼&lt;/strong&gt; : 같은 수가 다른 자리에 있음&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;낫싱&lt;/strong&gt; : 같은 수, 같은 자리가 전혀 없음&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;숫자가 틀릴 경우 :&lt;/strong&gt;  입력창, 확인버튼, 알림창 재생성.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;스트라이크, 볼, 낫싱을 경우에 맞게 출력
-    &lt;ul&gt;
-      &lt;li&gt;스트라이크와 볼이 둘 다 있을 경우, 볼 먼저 출력&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;숫자가 일치할 경우.
-    &lt;ul&gt;
-      &lt;li&gt;게임 종료&lt;/li&gt;
-      &lt;li&gt;재시작 버튼 클릭 이벤트 구현&lt;/li&gt;
-      &lt;li&gt;test&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="update" /><category term="update" /><summary type="html">첫 github.io 기술 블로그 게시물입니다. 한국어 가독성이 좋은지 확인하려 해요.</summary></entry></feed>
+  &lt;li&gt;ARCORE를 사용할 때, ARCORE가 제공하는 기본적인 기능을 이용하여 feature point를 추출하고 point cloud를 구성, plane을 인식하기 까지의 과정을 직접 제어해주는 방법&lt;/li&gt;
+  &lt;li&gt;각 데이터를 사용하기 위해 OpenGL을 이용한 rendering 과정이나 데이터 처리과정도 거쳐야 하므로 작업이 좀 까다로움
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;4-arcore--sceneform&quot;&gt;4. ARCORE + SCENEFORM&lt;/h1&gt;
+
+&lt;h3 id=&quot;4-1-sceneform&quot;&gt;4-1. Sceneform&lt;/h3&gt;
+
+&lt;p&gt;→ ARCORE에서 제공하는 3D Framework&lt;/p&gt;
+
+&lt;p&gt;→ High-level scene graph API&lt;/p&gt;
+
+&lt;p&gt;→ Filament에서 제공하는 Realistic physically based renderer&lt;/p&gt;
+
+&lt;p&gt;→ Android Studio plugin for importing, viewing, and building 3D assets.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;💡 OpenGL 없이도 AR, 비 AR app에서 사실적인 3D 장면 rendering 가능
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;4-2-sceneform-sdk-version-1160&quot;&gt;4-2. Sceneform SDK version 1.16.0&lt;/h3&gt;
+
+&lt;p&gt;→ open source.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/google-ar/sceneform-android-sdk&quot;&gt;google-ar/sceneform-android-sdk&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;→ Build with application as a Gradle module.&lt;/p&gt;
+
+&lt;p&gt;→ &lt;strong&gt;Supports glTF&lt;/strong&gt; instead of SFA and SFB Sceneform formats.
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;5-arcore-methods&quot;&gt;5. ARCORE METHODS&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;ARCORE%20by%20Google%203fab3357844944eeae9f7c5e4ead7332/5-1%20Interfaces%20b5534da149c845ae95eebf2794228ed2.csv&quot;&gt;5-1. Interfaces&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;ARCORE%20by%20Google%203fab3357844944eeae9f7c5e4ead7332/5-2%20Classes%20(Image,%20Face%20%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%AC)%206f38caaebc7f425ba9e50e43c8f87d6b.csv&quot;&gt;5-2. Classes (Image, Face 제외)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;ARCORE%20by%20Google%203fab3357844944eeae9f7c5e4ead7332/5-3%20Enums%20cc0fee4f96fd4b70afab623d8bb23f67.csv&quot;&gt;5-3. Enums&lt;/a&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;6-develop&quot;&gt;6. DEVELOP&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ARCORE + SCENEFORM 방식을 활용하여 Hanssem AR Furniture placement app을 개발하도록 한다.&lt;/li&gt;
+  &lt;li&gt;3D objects → .glb file 형식&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f088f9c5-5cca-4303-a6ee-644bae67056e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T064023Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=733c2e802f4b4499254c0d1f711a52cf6e4ad12f436a08f2590cc50cc6497f7b&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARCORE2&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;가구 선택 부분 및 모델 연결을 제외한 &lt;strong&gt;‘배치’&lt;/strong&gt; 기능과 &lt;strong&gt;‘길이 측정’&lt;/strong&gt; 기능 중점적으로 개발
+&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;6-1-coding&quot;&gt;6-1. Coding&lt;/h3&gt;
+
+&lt;p&gt;fragment로 구현 된 프로젝트&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;fragment&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;→ FragmentActivity 내의 어떤 동작 또는 사용자 인터페이스의 일부&lt;/p&gt;
+
+&lt;p&gt;→ Activity의 모듈식 세션&lt;/p&gt;
+
+&lt;p&gt;→ AR 시스템 상태를 관리하고 세션 수명주기 처리 ( ARCORE API의 주요 진입 점 )&lt;/p&gt;
+
+&lt;p&gt;→ 카메라 이미지와 장치 Pose에 접근할 수 있는 Frame을 수신할 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ArFragment&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arFragment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Renderable&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;renderable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ArFragment&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;AR APP의 필수 요소, ARCORE의 기본 구성 요소들을 사용하게 해주는 SCENEFORM fragment.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Renderable&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Node(하나의 Object가 차지하는 영역)에 연결하여 하나의 Object를 3D 공간에서 rendering 하기 위한 기본 Class&lt;/p&gt;</content><author><name></name></author><category term="App" /><category term="ARCORE" /><category term="Hanssem" /><category term="ar" /><summary type="html">본 게시물은 2021.07 ~ 08 한샘에서 AR 가구 배치 어플리케이션을 개발할 때, 공부했던 내용입니다. Hanssem AR(Augmented Reality) Placement application development</summary></entry></feed>

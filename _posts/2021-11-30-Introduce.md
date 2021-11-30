@@ -3,8 +3,8 @@ layout: post
 title:  "Jung-Log"
 date:   2021-11-30 00:55:25 +0900
 permalink: /intro/
-categories: [update]
-tags: update
+categories: [intro]
+tags: intro
 ---
 <h3>Jung-Log 시작하기</h3>
 
