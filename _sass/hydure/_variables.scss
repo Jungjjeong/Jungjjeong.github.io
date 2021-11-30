@@ -27,12 +27,12 @@ $xl-screen: 80rem;
   --border-radius: .5em;
   --border-color:  var(--oc-gray-3);
 
-  --code-bg:       #222222;
+  --code-bg:       #272727;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --body-color:       #ffffff;
+    --body-color:       #f0f0f0;
     --body-color-light: var(--oc-gray-6);
     --body-bg:          #222222;
     --link-color:       var(--oc-blue-4);
