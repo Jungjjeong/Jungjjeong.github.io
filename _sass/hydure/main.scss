@@ -9,8 +9,8 @@
 @import "archive";
 @import "message";
 @import "alignment";
-@import "highlight-dark";
+@import "highlight-light";
 
-@media (prefers-color-scheme: light) {
-  @import "highlight-light";
+@media (prefers-color-scheme: dark) {
+  @import "highlight-dark";
 }
