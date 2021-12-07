@@ -11,6 +11,6 @@
 @import "alignment";
 @import "highlight-light";
 
-@media (prefers-color-scheme: dark) {
-  @import "highlight-dark";
+@media (prefers-color-scheme: light) {
+  @import "highlight-light";
 }

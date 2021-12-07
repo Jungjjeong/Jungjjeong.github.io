@@ -1,0 +1,214 @@
+I"�8<p><br /></p>
+<ul>
+  <li>iOS 기본에 대해 공부해 보았다.</li>
+</ul>
+
+<p><br /></p>
+<hr />
+
+<h1 id="basic-ios">Basic iOS</h1>
+
+<h1 id="import-uikit">import UIKit</h1>
+
+<p>iOS 또는 tvOS 앱에 필요한 인프라 제공</p>
+
+<p>→ 인터페이스 구현을 위한 창 보기 및 아키텍쳐, multi- touch 및 기타 입력 처리 등 
+<br /><br /></p>
+
+<h1 id="ibaction-iboulet">IBAction IBOulet</h1>
+
+<p><strong>→ StoryBoard와의 연결고리 담당</strong></p>
+
+<p>→ <strong>IBAction</strong> : Event가 일어난 경우 호출되는 Action을 정의</p>
+
+<p>→ <strong>IBOutlet :</strong> 값에 접근하기 위한 변수 
+<br /></p>
+
+<h3 id="-왜-ib가-붙을까">? 왜 IB가 붙을까?</h3>
+
+<p>→ Interface Builder을 통해 받아온 데이터를 가져오거나, 해당 정보로 Action을 수행하겠단 의미.
+<br /></p>
+
+<h3 id="-그럼-는-뭘까">? 그럼 @는 뭘까?</h3>
+
+<p>→ @는 컴파일러에게 어떤 속성을 가지고 있다고 전하는 역할을 하는 예약어이다. 컴파일러에게 @가 붙은 명령어에 대해 어떤 attribute가 부여되었음을 말한다.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">@IBAction // Interface Builder와 연결된 Action이다.</code></strong></p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">@UIApplicationMain // App의 Main이 여기에 있다.</code></strong></p>
+
+<p>따라서 @IBAction의 속성이 func의 정의 앞에 붙어있다면, 이 함수는 Interface Builder에서 사용될 수 있고, UI로 연결이 가능하다는 의미를 가진다. 
+<br /><br /></p>
+
+<h1 id="uiapplicationmain">UIApplicationMain</h1>
+
+<p>C 기반 프로그램이 그렇듯 iOS 앱 또한 <code class="language-plaintext highlighter-rouge">main</code>함수의 시작으로 Application Life Cycle이 시작된다.</p>
+
+<p>하지만 Xcode에서 App 프로젝트를 생성하면 main 함수가 대신 <code class="language-plaintext highlighter-rouge">@UIApplicationMain</code> 이 메인 함수와 같은 역할을 한다.</p>
+
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4164b215-7c01-4667-83ce-8ca4aed94079/_2021-07-14__2.56.46.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211207%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20211207T053840Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=2b6e7f121060da548fe13fd4777d4d9fd8995020b6879cb7ea0a389700b7dcb6&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22_2021-07-14__2.56.46.png%22&amp;x-id=GetObject" alt="Basic" /></p>
+
+<p>이는 AppDelegate.swift 파일의 AppDelegate class 선언부 위에서 볼 수 있다.</p>
+
+<ul>
+  <li>UIApplication의 인스턴스인 application object를 생성한다</li>
+  <li>AppDelegate의 인스턴스인 application delegate를 생성한다.</li>
+  <li>Sets up the event cycle
+<br /><br /></li>
+</ul>
+
+<h1 id="uiapplication">UIApplication</h1>
+
+<p>메인 함수가 생성하는 UIApplication은 실행 중인 <strong>app의 중앙 처리 지점(point)</strong>이다.</p>
+
+<p>메인 함수는 이 객체를 singleton으로 생성하므로, shared로 전역에서 접근이 가능하다.</p>
+
+<p>따라서, 하나의 app은 하나의 UIApplication 인스턴스를 가지게 된다.</p>
+
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2089d74c-195c-4b02-ac7a-0e9ab651112a/_2021-07-14__3.05.55.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211207%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20211207T053859Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=e19cc8ade7f23204c5f4644757be52d1fe69657ead86cb7283228204dff9ba5d&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22_2021-07-14__3.05.55.png%22&amp;x-id=GetObject" alt="Basic2" /></p>
+
+<ul>
+  <li>
+    <p>user event에 대한 초기 routing을 handle</p>
+
+    <p>→ user event가 발생하면 해당 UIControl 객체(버튼 등)에 전달하는 일</p>
+  </li>
+  <li>
+    <p>런타임 이벤트 - app launch, low-memory warnings, and app termination - 을 delegate에 알리고 그에 따라 반응할 수 있게 한다.
+<br /><br /></p>
+  </li>
+</ul>
+
+<h1 id="appdelegate-scenedelegate">AppDelegate SceneDelegate</h1>
+
+<p>Xcode에서 처음 프로젝트를 생성하면 자동으로 추가되어 있는 Swift파일 중 <code class="language-plaintext highlighter-rouge">AppDelegate.swift</code>와 <code class="language-plaintext highlighter-rouge">SceneDelegate.swift</code> 파일은 어떤 역할일까?
+<br /></p>
+
+<h2 id="ios13-부터-바뀐-점">iOS13 부터 바뀐 점</h2>
+
+<ul>
+  <li>바뀌기 이전</li>
+</ul>
+
+<p><img src="Bhttps://s3.us-west-2.amazonaws.com/secure.notion-static.com/9874c007-d0da-455c-92b6-d05ac8c646c0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211207%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20211207T053922Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=eeca14c5ada766759a31ffbf6493959fe67f1ecfac0ae5b025446fb9ba79475a&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;x-id=GetObject" alt="Basic3" /></p>
+
+<ul>
+  <li>바뀐 후</li>
+</ul>
+
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/3d2e68d4-35a1-4d5c-9400-087b69038afc/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211207%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20211207T053937Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=986e0cd6c606e449ac8ec32704cd142ff4f0f93fe38913396fc2058c4c497ce3&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;x-id=GetObject" alt="Basic4" /></p>
+
+<ol>
+  <li>iOS12 까지는 대부분 하나의 앱에 하나의 window였지만, iOS13부터는 window의 개념이 scene으로 대체되고 아래의 사진처럼 <strong>하나의 앱에서 여러 scene</strong>을 가질 수 있게 되었다.</li>
+</ol>
+
+<aside>
+💡 **Scene?**
+UIKit은 UIWindowScene 객체를 사용하는 앱 UI의 각 인스턴스를 관리함. Scene에는 UI의 하나의 인스턴스를 나타내는 windows와 view controllers가 들어있다. 
+또한 각 Scene에 해당하는 UIWindowSceneDelegate 객체를 가지고 있고, 이 객체는 UIKit와 앱 간의 상호작용을 조정하는 데 사용한다. 
+Scene들은 같은 메모리와 앱 프로세스 공간을 공유하면서 서로 동시에 실행된다. 
+
+결과적으로 하나의 앱은 여러 scene과 scene delegate 객체를 동시에 활성화할 수 있다.
+
+</aside>
+
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ed0a0dc5-0106-4395-8728-fc2d57c3d11c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211207%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20211207T054005Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=846d22126c7d055b1a46ef01c2648a7b86d1db57a533742de246922166d4beb6&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;x-id=GetObject" alt="Basic5" /></p>
+
+<p>scene 간의 동기화를 위해서는 UISceneSession의 개념이 AppDelegate에 추가됨.</p>
+
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/91c5edb7-e740-4bf2-9e96-505dd223a4ea/_2021-07-14__3.10.51.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211207%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20211207T054027Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=4f40503fce8205944fc488396152880c7d74ac147c41730d181452342c347b0d&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22_2021-07-14__3.10.51.png%22&amp;x-id=GetObject" alt="Basic6" /></p>
+
+<ol>
+  <li>AppDelegate의 역할 중 UI의 상태를 알 수 있는 <strong>UILifeCycle에 대한 부분</strong>을 SceneDelegate가 하게 되었다.</li>
+</ol>
+
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/dc9bfd74-ef6b-430b-b227-c0f1f1ae3bf6/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211207%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20211207T054044Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=b3299280d6b0c49677e55e6bfc524a1d00e76d98f3c4361766581d0c95246bd4&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;x-id=GetObject" alt="Basic7" /></p>
+
+<p>UI의 상태를 알 수 있는 <strong>UILifeCycle에 대한 역할을 SceneDelegate</strong>가 하게 되었다.</p>
+
+<p>역할이 분리된 대신, AppDelegate에서 Scene Session을 통해서 Scene에 대한 정보를 업데이트 받는다.</p>
+
+<aside>
+💡 **Scene Session?**
+UISceneSession 객체는 scene의 고유의 런타임 인스턴스를 관리한다. 사용자가 앱에 새로운 scene을 추가하거나 프로그래밍 적으로 scene을 요청하면, 시스템은 그 scene을 추적하는 session 객체를 생성한다. 해당 session에는 고유한 식별자와 scene의 구성 세부사항 (configuration details)이 들어 있다.
+UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app switcher에서 사용자가 그 scene 클로징하는 것에 대응하여 그 session을 파괴한다. session 객체는 직접 생성하지 않고, UIKit가 앱의 사용자 인터페이스에 대응하여 생성한다.
+
+</aside>
+
+<ol>
+  <li>AppDelegate에 Session Lifecycle에 대한 역할 추가.</li>
+</ol>
+
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9e82b249-75b3-4f21-bd20-e9bb63246ccd/_2021-07-14__2.27.33.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211207%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20211207T054109Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=a9a3afe4da7c67a9dc61f2f2edbae3351d02b2d75ed29944003b2b37f7dd767e&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22_2021-07-14__2.27.33.png%22&amp;x-id=GetObject" alt="Basic8" /></p>
+
+<p>Scene Session이 생성되거나 삭제될 때 AppDelegate에 알리는 두 메소드 추가.</p>
+
+<p>Scene Session은 앱에서 생성한 모든 scene의 정보를 관리.</p>
+
+<p>UIKit에 새로운 scene과 session을 프로그래밍적 방식으로 생성할 수 있다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>💡 **iOS13부터 AppDelegate가 하는 일은?**
+이전에는 앱이 foreground에 들어가거나, background로 이동할 때 앱의 상태를 업데이트하는 등의 앱의 주요 생명 주기 이벤트를 관리 했었지만 이제는 그렇지 않다. 
+
+현재 하는 일
+1. 앱의 가장 중요한 데이터 구조를 초기화하는 것
+2. 앱의 scene을 환경설정(Configuration) 하는 것.
+3. 앱 밖에서 발생한 알림 (베터리 부족 ,다운로드 완료 등)에 대응하는 것
+4. 특정한 scenes, views, view controllers에 한정되지 않고 앱 자체를 타겟하는 이벤트에 대응하는 것.
+5. 애플 푸쉬 알람 서비스와 같이 실행 시 요구되는 모든 서비스를 등록하는 것.
+</code></pre></div></div>
+
+<p>AppDelegate 클래스는 새로운 프로젝트를 생성할 때 마다 자동으로 생성된다. 
+<br /><br /></p>
+
+<h1 id="view의-상태변화-감지">View의 상태변화 감지</h1>
+
+<p>화면에 보여지는 View가 바뀌면, 뷰 컨트롤러는 자동으로 특정한 메서드를 호출하여 이 변화에 다른 클래스들이 반응할 수 있도록 한다.</p>
+
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fafb24ea-2a58-412d-b017-04c773dc1ec4/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211207%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20211207T054134Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=37c8cb068d7b38d218a7b366aa00f73b3c850aba9918fb545dd08200e663b12e&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;x-id=GetObject" alt="Basic9" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>다른 기술 블로그에서 퍼 왔다. (출처 첨부 예정)
+</code></pre></div></div>
+
+<ul>
+  <li>viewDidLoad</li>
+</ul>
+
+<p>뷰 계층을 메모리에 로드한 직후에 수행한다. 주로 뷰의 초기화작업</p>
+
+<p>메모리에 뷰를 로드하고 레이아웃을 설정하는건 한 번 수행되는 작업이다.</p>
+
+<ul>
+  <li>viewWillAppear</li>
+</ul>
+
+<p>뷰가 계층에 추가되고, 화면에 표시되기 직전에 수행한다. 따라서 화면이 새로 올라올 때 마다 수행하기 때문에, 그 때마다 수행해야 할 작업을 담당하기 유용하다.</p>
+
+<ul>
+  <li>viewDidAppear</li>
+</ul>
+
+<p>뷰가 화면에 표시된 이후에 수행한다. 뷰를 보여줄 때 필요한 추가적인 작업을 담당한다.</p>
+
+<ul>
+  <li>viewWillDisappear</li>
+</ul>
+
+<p>뷰가 계층에서 사라지기 직전에 수행한다. 뷰를 생성하고나서 했던 행동들을 되돌리는 작업을 하거나, 작성 또는 선택된 정보들을 삭제되기 전까지 저장해두는 작업을 수행한다.</p>
+
+<ul>
+  <li>viewDidDisappear</li>
+</ul>
+
+<p>뷰가 계층에서 사라진 뒤 수행한다. 뷰를 숨기는 작업을 수행한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>💡 주의
+위와 같은 메서드들을 직접 사용할 때는 override 키워드와 super 키워드를 명시적으로 붙여줘야 한다.
+</code></pre></div></div>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span> <span class="p">{</span>
+<span class="k">super</span><span class="o">.</span><span class="nf">viewDidLoad</span><span class="p">()</span>
+<span class="c1">// Do any additional setup after loading the view.</span>
+<span class="p">}</span>
+</code></pre></div></div>
+:ET
