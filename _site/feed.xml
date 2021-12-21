@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-21T15:34:46+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jung-Log</title><subtitle>즐겁게 사는 개발자 지영입니다.</subtitle><entry><title type="html">Basic iOS</title><link href="http://localhost:4000/application/2021/12/07/BasicIOS.html" rel="alternate" type="text/html" title="Basic iOS" /><published>2021-12-07T14:30:25+09:00</published><updated>2021-12-07T14:30:25+09:00</updated><id>http://localhost:4000/application/2021/12/07/BasicIOS</id><content type="html" xml:base="http://localhost:4000/application/2021/12/07/BasicIOS.html">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-21T16:01:50+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jung-Log</title><subtitle>즐겁게 사는 개발자 지영입니다.</subtitle><entry><title type="html">Basic iOS</title><link href="http://localhost:4000/application/2021/12/07/BasicIOS.html" rel="alternate" type="text/html" title="Basic iOS" /><published>2021-12-07T14:30:25+09:00</published><updated>2021-12-07T14:30:25+09:00</updated><id>http://localhost:4000/application/2021/12/07/BasicIOS</id><content type="html" xml:base="http://localhost:4000/application/2021/12/07/BasicIOS.html">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;iOS 기본에 대해 공부해 보았다.&lt;/li&gt;
 &lt;/ul&gt;
@@ -12,7 +12,7 @@
 
 &lt;p&gt;iOS 또는 tvOS 앱에 필요한 인프라 제공&lt;/p&gt;
 
-&lt;p&gt;→ 인터페이스 구현을 위한 창 보기 및 아키텍쳐, multi- touch 및 기타 입력 처리 등 
+&lt;p&gt;→ 인터페이스 구현을 위한 창 보기 및 아키텍쳐, multi- touch 및 기타 입력 처리 등
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;ibaction-iboulet&quot;&gt;IBAction IBOulet&lt;/h1&gt;
@@ -21,7 +21,7 @@
 
 &lt;p&gt;→ &lt;strong&gt;IBAction&lt;/strong&gt; : Event가 일어난 경우 호출되는 Action을 정의&lt;/p&gt;
 
-&lt;p&gt;→ &lt;strong&gt;IBOutlet :&lt;/strong&gt; 값에 접근하기 위한 변수 
+&lt;p&gt;→ &lt;strong&gt;IBOutlet :&lt;/strong&gt; 값에 접근하기 위한 변수
 &lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;-왜-ib가-붙을까&quot;&gt;? 왜 IB가 붙을까?&lt;/h3&gt;
@@ -37,7 +37,7 @@
 
 &lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@UIApplicationMain // App의 Main이 여기에 있다.&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;따라서 @IBAction의 속성이 func의 정의 앞에 붙어있다면, 이 함수는 Interface Builder에서 사용될 수 있고, UI로 연결이 가능하다는 의미를 가진다. 
+&lt;p&gt;따라서 @IBAction의 속성이 func의 정의 앞에 붙어있다면, 이 함수는 Interface Builder에서 사용될 수 있고, UI로 연결이 가능하다는 의미를 가진다.
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;uiapplicationmain&quot;&gt;UIApplicationMain&lt;/h1&gt;
@@ -46,7 +46,7 @@
 
 &lt;p&gt;하지만 Xcode에서 App 프로젝트를 생성하면 main 함수가 대신 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@UIApplicationMain&lt;/code&gt; 이 메인 함수와 같은 역할을 한다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4164b215-7c01-4667-83ce-8ca4aed94079/_2021-07-14__2.56.46.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211207%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211207T053840Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=2b6e7f121060da548fe13fd4777d4d9fd8995020b6879cb7ea0a389700b7dcb6&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22_2021-07-14__2.56.46.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;Basic&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/146885803-bb92f6af-9f98-421d-a709-726b458be9a4.png&quot; alt=&quot;Basic&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;이는 AppDelegate.swift 파일의 AppDelegate class 선언부 위에서 볼 수 있다.&lt;/p&gt;
 
@@ -65,18 +65,13 @@
 
 &lt;p&gt;따라서, 하나의 app은 하나의 UIApplication 인스턴스를 가지게 된다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2089d74c-195c-4b02-ac7a-0e9ab651112a/_2021-07-14__3.05.55.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211207%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211207T053859Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=e19cc8ade7f23204c5f4644757be52d1fe69657ead86cb7283228204dff9ba5d&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22_2021-07-14__3.05.55.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;Basic2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/146885800-566d7e67-13b6-473c-be4c-f4f3a106b5a1.png&quot; alt=&quot;Basic2&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;user event에 대한 초기 routing을 handle&lt;/p&gt;
-
-    &lt;p&gt;→ user event가 발생하면 해당 UIControl 객체(버튼 등)에 전달하는 일&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;런타임 이벤트 - app launch, low-memory warnings, and app termination - 을 delegate에 알리고 그에 따라 반응할 수 있게 한다.
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;user event에 대한 초기 routing을 handle
+→ user event가 발생하면 해당 UIControl 객체(버튼 등)에 전달하는 일&lt;/li&gt;
+  &lt;li&gt;런타임 이벤트 - app launch, low-memory warnings, and app termination - 을 delegate에 알리고 그에 따라 반응할 수 있게 한다.
+&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;appdelegate-scenedelegate&quot;&gt;AppDelegate SceneDelegate&lt;/h1&gt;
@@ -90,38 +85,38 @@
   &lt;li&gt;바뀌기 이전&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9874c007-d0da-455c-92b6-d05ac8c646c0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211207%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211207T055226Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=cec92104b03778760ee18d50ee886aa56725cfbc356efc322d5bbc7736de81d5&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;Basic3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/146885795-5a1d5957-a877-48c3-9df4-2172dd025f35.png&quot; alt=&quot;Basic3&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;바뀐 후&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/3d2e68d4-35a1-4d5c-9400-087b69038afc/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211207%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211207T053937Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=986e0cd6c606e449ac8ec32704cd142ff4f0f93fe38913396fc2058c4c497ce3&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;Basic4&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/146885792-3969823a-19a2-4251-9b2f-0acac79fcf76.png&quot; alt=&quot;Basic4&quot; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;iOS12 까지는 대부분 하나의 앱에 하나의 window였지만, iOS13부터는 window의 개념이 scene으로 대체되고 아래의 사진처럼 &lt;strong&gt;하나의 앱에서 여러 scene&lt;/strong&gt;을 가질 수 있게 되었다.&lt;/p&gt;
 
     &lt;p&gt;💡 &lt;strong&gt;Scene?&lt;/strong&gt;
- UIKit은 UIWindowScene 객체를 사용하는 앱 UI의 각 인스턴스를 관리함. Scene에는 UI의 하나의 인스턴스를 나타내는 windows와 view controllers가 들어있다. 
- 또한 각 Scene에 해당하는 UIWindowSceneDelegate 객체를 가지고 있고, 이 객체는 UIKit와 앱 간의 상호작용을 조정하는 데 사용한다. 
- Scene들은 같은 메모리와 앱 프로세스 공간을 공유하면서 서로 동시에 실행된다.&lt;/p&gt;
+UIKit은 UIWindowScene 객체를 사용하는 앱 UI의 각 인스턴스를 관리함. Scene에는 UI의 하나의 인스턴스를 나타내는 windows와 view controllers가 들어있다.
+또한 각 Scene에 해당하는 UIWindowSceneDelegate 객체를 가지고 있고, 이 객체는 UIKit와 앱 간의 상호작용을 조정하는 데 사용한다.
+Scene들은 같은 메모리와 앱 프로세스 공간을 공유하면서 서로 동시에 실행된다.&lt;/p&gt;
 
     &lt;p&gt;결과적으로 하나의 앱은 여러 scene과 scene delegate 객체를 동시에 활성화할 수 있다.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ed0a0dc5-0106-4395-8728-fc2d57c3d11c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211207%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211207T054005Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=846d22126c7d055b1a46ef01c2648a7b86d1db57a533742de246922166d4beb6&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;Basic5&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/146885791-c2a68002-8707-426c-8dbe-761be77a9199.png&quot; alt=&quot;Basic5&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;scene 간의 동기화를 위해서는 UISceneSession의 개념이 AppDelegate에 추가됨.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/91c5edb7-e740-4bf2-9e96-505dd223a4ea/_2021-07-14__3.10.51.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211207%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211207T054027Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=4f40503fce8205944fc488396152880c7d74ac147c41730d181452342c347b0d&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22_2021-07-14__3.10.51.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;Basic6&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/146885789-327a86fd-8dfb-48f8-9ba7-b3fdabfef797.png&quot; alt=&quot;Basic6&quot; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;AppDelegate의 역할 중 UI의 상태를 알 수 있는 &lt;strong&gt;UILifeCycle에 대한 부분&lt;/strong&gt;을 SceneDelegate가 하게 되었다.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/dc9bfd74-ef6b-430b-b227-c0f1f1ae3bf6/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211207%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211207T054044Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=b3299280d6b0c49677e55e6bfc524a1d00e76d98f3c4361766581d0c95246bd4&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;Basic7&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/146885787-e3aa1943-0229-49a2-8011-8677c70e0c0a.png&quot; alt=&quot;Basic7&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;UI의 상태를 알 수 있는 &lt;strong&gt;UILifeCycle에 대한 역할을 SceneDelegate&lt;/strong&gt;가 하게 되었다.&lt;/p&gt;
 
@@ -136,7 +131,7 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
   &lt;li&gt;AppDelegate에 Session Lifecycle에 대한 역할 추가.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9e82b249-75b3-4f21-bd20-e9bb63246ccd/_2021-07-14__2.27.33.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211207%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211207T054109Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=a9a3afe4da7c67a9dc61f2f2edbae3351d02b2d75ed29944003b2b37f7dd767e&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22_2021-07-14__2.27.33.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;Basic8&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/146885784-3d1d3ef3-95db-4845-bf5e-db7db52c6331.png&quot; alt=&quot;Basic8&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Scene Session이 생성되거나 삭제될 때 AppDelegate에 알리는 두 메소드 추가.&lt;/p&gt;
 
@@ -145,7 +140,7 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 &lt;p&gt;UIKit에 새로운 scene과 session을 프로그래밍적 방식으로 생성할 수 있다.&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;💡 **iOS13부터 AppDelegate가 하는 일은?**
-이전에는 앱이 foreground에 들어가거나, background로 이동할 때 앱의 상태를 업데이트하는 등의 앱의 주요 생명 주기 이벤트를 관리 했었지만 이제는 그렇지 않다. 
+이전에는 앱이 foreground에 들어가거나, background로 이동할 때 앱의 상태를 업데이트하는 등의 앱의 주요 생명 주기 이벤트를 관리 했었지만 이제는 그렇지 않다.
 
 현재 하는 일
 1. 앱의 가장 중요한 데이터 구조를 초기화하는 것
@@ -155,14 +150,14 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 5. 애플 푸쉬 알람 서비스와 같이 실행 시 요구되는 모든 서비스를 등록하는 것.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;AppDelegate 클래스는 새로운 프로젝트를 생성할 때 마다 자동으로 생성된다. 
+&lt;p&gt;AppDelegate 클래스는 새로운 프로젝트를 생성할 때 마다 자동으로 생성된다.
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;view의-상태변화-감지&quot;&gt;View의 상태변화 감지&lt;/h1&gt;
 
 &lt;p&gt;화면에 보여지는 View가 바뀌면, 뷰 컨트롤러는 자동으로 특정한 메서드를 호출하여 이 변화에 다른 클래스들이 반응할 수 있도록 한다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fafb24ea-2a58-412d-b017-04c773dc1ec4/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211207%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211207T054134Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=37c8cb068d7b38d218a7b366aa00f73b3c850aba9918fb545dd08200e663b12e&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;Basic9&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/146885781-bdba727d-947a-4197-8023-256e272b9b4b.png&quot; alt=&quot;Basic9&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;다른 기술 블로그에서 퍼 왔다. (출처 첨부 예정)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -546,6 +541,7 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 &lt;p&gt;(21/07/01 - 21/08/31)&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;hr /&gt;
 
 &lt;h1 id=&quot;1-arkit&quot;&gt;1. ARKIT?&lt;/h1&gt;
@@ -558,7 +554,7 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 
 &lt;p&gt;→ 2017년 6월 처음 출시&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e16a9e3f-1882-4bde-92d0-c9f83de7a8df/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T101725Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=d63f645ae7db82e5fb6ff8c931502311408412bfdcb75971a46275f188b01bba&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARKIT&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/146885241-8e9e9596-af90-4f3e-aaf4-9158930e7b7f.png&quot; alt=&quot;ARKIT&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;💡 ARKIT은 mac 내 Simulator로 구동 불가, ARKIT 사용 위해서는 iOS 11 이상의 기기와 Xcode 9 이상의 개발 환경 필요.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -592,7 +588,7 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 
 &lt;p&gt;Arcore가 feature points의 확장에 조금 더 중점을 둔다면,&lt;/p&gt;
 
-&lt;p&gt;Arkit는 feature points들을 이용한 수직, 수평 → 평면 detection에 중점을 둔다. 
+&lt;p&gt;Arkit는 feature points들을 이용한 수직, 수평 → 평면 detection에 중점을 둔다.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;2-arkit-기능&quot;&gt;2. ARKIT 기능&lt;/h1&gt;
@@ -621,17 +617,17 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 
 &lt;h2 id=&quot;2-2-location-anchor&quot;&gt;2-2. Location Anchor&lt;/h2&gt;
 
-&lt;p&gt;유명 랜드마크 및 도시의 곳곳 특정 위치에서 AR 경험을 구현할 수 있다. 위치 Anchor를 통해 특정 위도, 경도 및 고도 좌표에 AR 창작물을 고정할 수 있으며, 사용자는 카메라 렌즈를 통해 실제 물체를 보는 것처럼 가상 물체를 움직이고 다른 시각에서 확인할 수 있다. 
+&lt;p&gt;유명 랜드마크 및 도시의 곳곳 특정 위치에서 AR 경험을 구현할 수 있다. 위치 Anchor를 통해 특정 위도, 경도 및 고도 좌표에 AR 창작물을 고정할 수 있으며, 사용자는 카메라 렌즈를 통해 실제 물체를 보는 것처럼 가상 물체를 움직이고 다른 시각에서 확인할 수 있다.
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;2-3-얼굴-추적-기능-지원-확대&quot;&gt;2-3. 얼굴 추적 기능 지원 확대&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;얼굴 추적 기능&lt;/strong&gt; (얼굴을 인식하고 ARKIT 상 좌표계 (x, y, z) 축 오버레이, 각 눈의 위치 및 방향 추적)에 대한 지원이 iPhone SE를 포함하여 A12 Bionic 칩 이상이 탑재된 모든 기기의 전면 카메라로 확대되어, 더 많은 사용자가 전면 카메라를 사용하여 AR 경험을 즐길 수 있다. TrueDepht 카메라를 사용하여 한번에 최대 3명의 얼굴을 추적하면서 미모티콘 및 Snapchat와 같은 전면 카메라 경험을 지원한다. 
+&lt;p&gt;&lt;strong&gt;얼굴 추적 기능&lt;/strong&gt; (얼굴을 인식하고 ARKIT 상 좌표계 (x, y, z) 축 오버레이, 각 눈의 위치 및 방향 추적)에 대한 지원이 iPhone SE를 포함하여 A12 Bionic 칩 이상이 탑재된 모든 기기의 전면 카메라로 확대되어, 더 많은 사용자가 전면 카메라를 사용하여 AR 경험을 즐길 수 있다. TrueDepht 카메라를 사용하여 한번에 최대 3명의 얼굴을 추적하면서 미모티콘 및 Snapchat와 같은 전면 카메라 경험을 지원한다.
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;2-4-scene-geometry&quot;&gt;2-4. Scene Geometry&lt;/h2&gt;
 
-&lt;p&gt;Scene Geometry로 바닥, 벽, 천장, 창문, 문, 좌석을 식별하는 레이블을 사용하여 공간의 토폴로지 맵을 만들 수 있다. 이처럼 실제 세계에 대한 심층적 이해를 통해 가상 물체에 대한 사물 occlusion 및 실제 물리적 요소를 구현하고 AR 작업 흐름을 구동하는 데 필요한 정보를 더 많이 얻을 수 있다. 
+&lt;p&gt;Scene Geometry로 바닥, 벽, 천장, 창문, 문, 좌석을 식별하는 레이블을 사용하여 공간의 토폴로지 맵을 만들 수 있다. 이처럼 실제 세계에 대한 심층적 이해를 통해 가상 물체에 대한 사물 occlusion 및 실제 물리적 요소를 구현하고 AR 작업 흐름을 구동하는 데 필요한 정보를 더 많이 얻을 수 있다.
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;2-5-lidar-스캐너-이용&quot;&gt;2-5. LIDAR 스캐너 이용&lt;/h2&gt;
@@ -651,7 +647,7 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 
 &lt;h2 id=&quot;2-8-전-후면-카메라-동시-지원&quot;&gt;2-8. 전 후면 카메라 동시 지원&lt;/h2&gt;
 
-&lt;p&gt;전면 카메라, 후면 카메라로 얼굴과 공간을 동시에 추적할 수 있어 새로운 가능성이 열린다. 예를 들어 사용자는 자신의 얼굴만을 사용해 후면 카메라 뷰에 보이는 AR 콘텐츠와 상호 작용할 수 있다. 
+&lt;p&gt;전면 카메라, 후면 카메라로 얼굴과 공간을 동시에 추적할 수 있어 새로운 가능성이 열린다. 예를 들어 사용자는 자신의 얼굴만을 사용해 후면 카메라 뷰에 보이는 AR 콘텐츠와 상호 작용할 수 있다.
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;2-9-다중-얼굴-추적&quot;&gt;2-9. 다중 얼굴 추적&lt;/h2&gt;
@@ -661,7 +657,7 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 
 &lt;h2 id=&quot;2-10-협업-세션&quot;&gt;2-10. 협업 세션&lt;/h2&gt;
 
-&lt;p&gt;여러 사람들과의 실시간 협업 세션을 사용하여 공동으로 AR 앱을 제작할 수 있으므로 AR 경험을 더욱 빠르게 개발하고 사용자들이 공유 AR 경험을 멀티 플레이어 게임처럼 즐기게 할 수 있다. 
+&lt;p&gt;여러 사람들과의 실시간 협업 세션을 사용하여 공동으로 AR 앱을 제작할 수 있으므로 AR 경험을 더욱 빠르게 개발하고 사용자들이 공유 AR 경험을 멀티 플레이어 게임처럼 즐기게 할 수 있다.
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;2-11-추가-개선-사항&quot;&gt;2-11. 추가 개선 사항&lt;/h2&gt;
@@ -670,7 +666,7 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 
 &lt;p&gt;→ 복잡한 환경의 물체 인식이 개선되면서 3D 물체 인식이 더 강력해졌다.&lt;/p&gt;
 
-&lt;p&gt;→ 이제 머신 러닝을 사용하여 환경에서 더욱 빠르게 평면을 감지할 수 있다. 
+&lt;p&gt;→ 이제 머신 러닝을 사용하여 환경에서 더욱 빠르게 평면을 감지할 수 있다.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;3-arkit-or-arcore&quot;&gt;3. ARKIT or ARCORE?&lt;/h1&gt;
@@ -683,7 +679,7 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 
 &lt;h2 id=&quot;3-1-지원-기능&quot;&gt;3-1. 지원 기능&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0f4fec80-23d7-4527-a8e1-4e059007a621/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T101821Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=ac5056f36119a7bb7e6c2f0d503b7ea308a490a5b95dff69ba19434c83a94e3a&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARKIT2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/146885238-d8c9790b-47ee-45c1-84d0-b7ce1fc49335.png&quot; alt=&quot;ARKIT2&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;기본적으로 제공하는 기능은 거의 동일하나&lt;/p&gt;
 
@@ -742,10 +738,10 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 
 &lt;p&gt;→ True Depth 카메라가 장착되어 있어 정확도가 상당히 높은 인식 기술 제공&lt;/p&gt;
 
-&lt;p&gt;→ 특히 LIDAR 부착된 장치의 경우, 고해상도의 Depth Map을 얻을 수 있어 AR 세계의 공간을 분석하고 인식하는 기술이 더욱 향상됨. 
+&lt;p&gt;→ 특히 LIDAR 부착된 장치의 경우, 고해상도의 Depth Map을 얻을 수 있어 AR 세계의 공간을 분석하고 인식하는 기술이 더욱 향상됨.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;4--class&quot;&gt;4.  CLASS&lt;/h1&gt;
+&lt;h1 id=&quot;4-class&quot;&gt;4. CLASS&lt;/h1&gt;
 
 &lt;h2 id=&quot;4-1-arconfiguration&quot;&gt;4-1. ARConfiguration&lt;/h2&gt;
 
@@ -753,7 +749,7 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 
 &lt;p&gt;→ 이를 상속받은 8개의 서브클래스가 실질적인 작업을 한다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/89290f1b-444a-4087-8591-408c673c1a4b/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T101846Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=7f9886431963334cdbd2d8dce6897b945a080d77eb83dde425301ce6fe7120e1&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARKIT3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/146885248-ff82235d-832f-4ec3-b9b3-ed865fda421c.png&quot; alt=&quot;ARKIT3&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;→ ARWorldTrackingConfiguration&lt;/p&gt;
 
@@ -761,20 +757,19 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 
 &lt;p&gt;가상의 물체는 현실 세계의 카메라가 어떻게 움직이더라도 같은 곳에 위치해야 한다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/943deb0e-4606-4b76-bcfa-dffd342b17d0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T101908Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=5caffd310374995f412b26f9d5ce999af042ec5cf5fe0cf3db921c9c213c649c&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARKIT4&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/146885234-420d7d2b-40db-4827-8b49-f94bc7e3f6b9.png&quot; alt=&quot;ARKIT4&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;기기의 움직임을 3개의 회전각(roll, pitch, yaw)과 3개의 변환각 (x, y, z)을 통해 추적한다. 
+&lt;p&gt;기기의 움직임을 3개의 회전각(roll, pitch, yaw)과 3개의 변환각 (x, y, z)을 통해 추적한다.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;5-scenekit&quot;&gt;5. SCENEKIT&lt;/h1&gt;
 
 &lt;p&gt;Scenekit는 앱에서 3D 애니메이션 장면과 효과를 만드는 데 도움이 되는 고급 3D 그래픽 프래임워크.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f734e9a7-41d8-438b-9833-62630a6a698d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T101924Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=dae484382715ae1604dc36586322649ed1cc47d750939c6a65e783463437fa8a&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARKIT5&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/146885247-01b856e6-466b-4626-826f-79084ba8c8b2.png&quot; alt=&quot;ARKIT5&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;모바일 환경에서 증강현실 혹은 3D 모델 랜더링을 요하는 어플리케이션을 개발할 때, OpenGL이나 Apple의 Metal과 같은 그래픽 API들을 표준으로 삼음.&lt;/p&gt;
-
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
@@ -834,20 +829,20 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 
 &lt;p&gt;→ 보는 방향이 -z축 방향을 가리키는 우회 좌표계를 사용한다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0500914b-4c24-443a-8702-a059a6b1d51d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T101941Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=9051302c6c9808c9a8ade6aaab6d427816d1f1cdb2f824d2c6f41b33c458df4e&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARKIT6&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/146885246-b01aac4e-2f4a-407b-afda-c264859ae135.png&quot; alt=&quot;ARKIT6&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;SCENEKIT은 2017년 이후로 더 이상 업데이트 되지 않음&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;→ 점점 사라질 예정&lt;/p&gt;
 
-&lt;p&gt;→ 하지만 아직도 RealityKit 2.0보다 몇몇 이점이 존재한다. 
+&lt;p&gt;→ 하지만 아직도 RealityKit 2.0보다 몇몇 이점이 존재한다.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;6-realitykit-20&quot;&gt;6. RealityKit 2.0&lt;/h1&gt;
 
 &lt;p&gt;기본 ARKit 통합, 물리적 요소 기반의 랜더링, 변형 및 스켈레톤 애니메이션, 공간 오디오 및 강체 물리 요소를 통해 AR 개발을 빠르고 쉽게 수행할 수 있게 해주는 프레임워크.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/12284363-6f7d-475e-8bc8-1f9e184a9e45/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T102000Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=143593cf85739e7bf8fe3d5b18d8c8dd04763f57bf87088c5cd52ba142e630a4&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARKIT7&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/146885244-26f20bef-b0ec-4dc9-8a12-0dc2e3e61c22.png&quot; alt=&quot;ARKIT7&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;→ Apple의 랜더링 기술 제품군에서 가장 최신 SDK (2019년 출시)&lt;/p&gt;
 
@@ -881,6 +876,7 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 &lt;p&gt;(21/07/01 - 21/08/31)&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;hr /&gt;
 
 &lt;h1 id=&quot;1-arcore-&quot;&gt;1. ARCORE ?&lt;/h1&gt;
@@ -894,7 +890,7 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 
 &lt;ol&gt;
   &lt;li&gt;모바일 장치가 이동할 때 그 위치를 추적한다.&lt;/li&gt;
-  &lt;li&gt;실제 세계에 대한 지속적인 이해를 구축한다. 
+  &lt;li&gt;실제 세계에 대한 지속적인 이해를 구축한다.
 &lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -902,16 +898,17 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 
 &lt;p&gt;▶ points들을 추출하는 것 뿐만 아닌, plain(평면) detection을 감지할 수 있고, 주변 영역의 평균 조명 값을 추정할 수 있다. ARCORE는 이러한 모든 기능들이 결합되어, 카메라로 실제로 촬영되는 공간에 대한 자체 이해를 구축한다. 따라서 촬영되는 현실 세계에 대한 구축된 이해를 바탕으로 객체, 주석, 또는 기타 정보 등을 가상으로 배치할 수 있다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8ced052f-6b5c-45bc-8419-f09c13da8051/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T063243Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=a0e3d37e958a9e068fc6b2ca4047333273da48087e44eeb4f231411ead4b880f&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARCORE Flow&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/146884625-819285a6-06a1-44a5-86bc-e68b8d57e4f1.png&quot; alt=&quot;ARCORE Flow&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;h1 id=&quot;2-fundamental-concepts&quot;&gt;2. Fundamental concepts&lt;/h1&gt;
 
 &lt;h3 id=&quot;2-1-motion-tracking&quot;&gt;2-1. Motion tracking&lt;/h3&gt;
 
-&lt;p&gt;실제 환경을 촬영하고 있는 핸드폰이 움직일 때, ARCORE은 ‘simultaneous localization and mapping’ (= SLAM) 이라는 process를 사용하여 주변 환경과 관련된 위치를 파악한다. ARCORE는 카메라의 이미지에서 시각적으로 구분되는 특징인 ‘Feature points’를 감지하고 이를 통하여 위치의 변화를 감지한다.  해당 points들은 IMU(관성 측정 장비)의 관성 측정치와 결합되며, 시간이 지남에 따라 전 세계를 기준으로 현재 카메라가 촬영하고 있는 장소의 ‘Pose’ (Position and Orientation)를 추정하게 된다.&lt;/p&gt;
+&lt;p&gt;실제 환경을 촬영하고 있는 핸드폰이 움직일 때, ARCORE은 ‘simultaneous localization and mapping’ (= SLAM) 이라는 process를 사용하여 주변 환경과 관련된 위치를 파악한다. ARCORE는 카메라의 이미지에서 시각적으로 구분되는 특징인 ‘Feature points’를 감지하고 이를 통하여 위치의 변화를 감지한다. 해당 points들은 IMU(관성 측정 장비)의 관성 측정치와 결합되며, 시간이 지남에 따라 전 세계를 기준으로 현재 카메라가 촬영하고 있는 장소의 ‘Pose’ (Position and Orientation)를 추정하게 된다.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;💡 SLAM은 주로 자율 주행 차량에 사용되며, 기기의 주변 환경 지도를 작성하는 동시에, 기기의 위치를 작성된 지도 안에서 인식하는 기법이다. 
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;💡 SLAM은 주로 자율 주행 차량에 사용되며, 기기의 주변 환경 지도를 작성하는 동시에, 기기의 위치를 작성된 지도 안에서 인식하는 기법이다.
 이 알고리즘을 통해 기기는 미지의 환경에 대한 지도를 작성할 수 있으며, 엔지니어는 지도 정보를 활용하여 환경 파악 및 장애물 회피 등의 작업을 수행할 수 있다.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -920,7 +917,7 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;💡 SLAM process는 조금 더 광범위한 의미로 COM(concurrent odometry and mapping) process라고도 불린다.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;▶ 3D contents를 rendering하는 가상 카메라의 Pose와 ARCORE에서 제공하는 나의 핸드폰 장치 카메라의  Pose를 일치 시킨다. 따라서 개발자는 올바른 위치에 가상 3D contents를  rendering할 수 있으며, 핸드폰 장치에서 촬영되고 있는 화면과 rendering되는 가상 이미지가 겹쳐져 가상 contents가 실제 촬영되고 있는 세계의 일부인 것처럼 보이게 한다.
+&lt;p&gt;▶ 3D contents를 rendering하는 가상 카메라의 Pose와 ARCORE에서 제공하는 나의 핸드폰 장치 카메라의 Pose를 일치 시킨다. 따라서 개발자는 올바른 위치에 가상 3D contents를 rendering할 수 있으며, 핸드폰 장치에서 촬영되고 있는 화면과 rendering되는 가상 이미지가 겹쳐져 가상 contents가 실제 촬영되고 있는 세계의 일부인 것처럼 보이게 한다.
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;2-2-environmental-understanding&quot;&gt;2-2. Environmental understanding&lt;/h3&gt;
@@ -929,7 +926,7 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 
 &lt;p&gt;ARCORE는 테이블이나 벽과 같은 일반적인 수직이나 수평의 표면에 있는 것처럼 보이는 feature points의 cluster(군집들)를 찾고, 이러한 표면들을 APP 상에서 plane으로 사용할 수 있도록 한다. ARCORE는 또한 각 평면의 경계를 결정하고, 해당 정보를 앱에 제공할 수 있다. 따라서 평면과, 평면의 경계 등의 여러 정보들을 사용하여 plane에 가상 개체를 배치할 수 있다.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;💡 ARCORE는 feature points(시각적으로 구분되는 점)들을 사용하여 plane을 감지하기 때문에, 
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;💡 ARCORE는 feature points(시각적으로 구분되는 점)들을 사용하여 plane을 감지하기 때문에,
 질감과 물건이 없는 흰색 벽, 평면은 제대로 감지되지 않을 수 있다.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -944,16 +941,16 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 
 &lt;h3 id=&quot;2-4-light-estimation&quot;&gt;2-4. Light estimation&lt;/h3&gt;
 
-&lt;p&gt;ARCORE는 환경의 조명에 대한 정보를 감지하고, 주어진 카메라 이미지에 대한 평균 강도와 색상 보정을 제공할 수 있다. 해당 정보를 사용하여 주변 환경과 동일한 조건에서 가상 contents를 비추어 현실감을 높인다. 
+&lt;p&gt;ARCORE는 환경의 조명에 대한 정보를 감지하고, 주어진 카메라 이미지에 대한 평균 강도와 색상 보정을 제공할 수 있다. 해당 정보를 사용하여 주변 환경과 동일한 조건에서 가상 contents를 비추어 현실감을 높인다.
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;2-5-user-interaction&quot;&gt;2-5. User interaction&lt;/h3&gt;
 
 &lt;p&gt;ARCORE는 hit testing을 사용하여 휴대 전화 화면상의 (x, y) 좌표를 취하고, 카메라의 세계에서 광선을 투과하여 모든 평면과 광선이 교차하는 feature points, 세계 공간에서 교차하는 pose들을 활용하여 사용자는 환경에서 개체를 선택하거나 다른 방식으로 상호작용 할 수 있다.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;💡 Hit testing은 적중 테스트라고 하며, 포인트(터치 포인트 등)이 화면에 그려진 그래픽 객체(UIView 등)과 만나는지 여부를 결정하는 Process이다. 
-사용자가 기기 화면을 Tap하면 ARCORE는 해당 (x,y) 좌표에서 광선이 뻗어나간다 가정하고, 
-해당 광선이 교차하는 모든 plane, feature points, pose를 반환한다. 
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;💡 Hit testing은 적중 테스트라고 하며, 포인트(터치 포인트 등)이 화면에 그려진 그래픽 객체(UIView 등)과 만나는지 여부를 결정하는 Process이다.
+사용자가 기기 화면을 Tap하면 ARCORE는 해당 (x,y) 좌표에서 광선이 뻗어나간다 가정하고,
+해당 광선이 교차하는 모든 plane, feature points, pose를 반환한다.
 해당 결과로 Anchor를 만들게 된다.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -997,16 +994,17 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;💡 Anchor는 CPU costs를 발생시키므로, 가능하면 재사용하며 더 이상 필요하지 않을 시 detach한다.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/eee43188-bb4d-4b44-ac6a-d2fa1d7e7051/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T063933Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=617914cd02ac4ff0db6d8d5d8a5830b176dd4eaf8a2c3764872b43fc666290ce&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARCORE Flow2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;hhttps://user-images.githubusercontent.com/72294509/146884635-14a5d864-8433-493d-b1d4-273a882729e8.png&quot; alt=&quot;ARCORE Flow2&quot; /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;Anchor&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;anchor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hitResult&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;createAnchor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; 
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;Anchor&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;anchor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hitResult&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;createAnchor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;// plane tap시 hitresult 에서 anchor 생성&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;AnchorNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;anchorNode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AnchorNode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;anchor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; 
+&lt;span class=&quot;nc&quot;&gt;AnchorNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;anchorNode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AnchorNode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;anchor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;// 공간에 anchor을 기반으로 자동으로 배치되는 Node(Node : 하나의 오브젝트가 차지하는 영역)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;anchorNode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setParent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arFragment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getArSceneView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getScene&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// (getScene : 장면 반환 / getArSceneView : 장면 랜더링(arsceneview) 반환) &lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// (getScene : 장면 반환 / getArSceneView : 장면 랜더링(arsceneview) 반환)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;// -&amp;gt; parentNode로 set&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;2-8-augmented-images&quot;&gt;2-8. Augmented Images&lt;/h3&gt;
@@ -1015,7 +1013,7 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 
 &lt;p&gt;ARCORE는 흔들리는 2D 이미지 또한 추적할 수 있다.&lt;/p&gt;
 
-&lt;p&gt;이미지를 오프라인으로 컴파일하여 이미지 데이터베이스를 만들거나, 개별 이미지를 장치에서 실시간으로 추가할 수 있다. 해당 이미지가 등록될 때 마다, ARCORE는 이러한 이미지, 이미지의 경계들을 감지하고 해당 pose를 반환하게 된다. 
+&lt;p&gt;이미지를 오프라인으로 컴파일하여 이미지 데이터베이스를 만들거나, 개별 이미지를 장치에서 실시간으로 추가할 수 있다. 해당 이미지가 등록될 때 마다, ARCORE는 이러한 이미지, 이미지의 경계들을 감지하고 해당 pose를 반환하게 된다.
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;2-9-sharing&quot;&gt;2-9. Sharing&lt;/h3&gt;
@@ -1027,7 +1025,7 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 
 &lt;h3 id=&quot;2-10-arcore-elements&quot;&gt;2-10. ARCORE ELEMENTS&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/11aad0b8-7ea8-4128-bf98-402b1ae6f5d9/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T063955Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=4f290e2d67132c03a31b547e0de86b80f264160b360307efd02d81879fc8c8ae&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARCORE&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/146884639-938ee7a0-f05c-461c-9db6-3e94e96099ef.png&quot; alt=&quot;ARCORE&quot; /&gt;
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;3-arcore--opengl&quot;&gt;3. ARCORE + OPENGL&lt;/h1&gt;
@@ -1086,59 +1084,18 @@ UIKit은 session 정보를 그 scene 자체의 life time동안 유지하고, app
 &lt;h1 id=&quot;5-arcore-methods&quot;&gt;5. ARCORE METHODS&lt;/h1&gt;
 
 &lt;h3 id=&quot;5-1interfaces&quot;&gt;5-1.Interfaces&lt;/h3&gt;
+
 &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/144005515-57a6f1fb-668e-409b-bbd7-6a80719377c9.JPG&quot; alt=&quot;Interfaces&quot; /&gt;&lt;/p&gt;
+
 &lt;h3 id=&quot;5-2classes&quot;&gt;5-2.Classes&lt;/h3&gt;
+
 &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/144005518-d377c03a-2a15-4868-81b6-42d811c9bf35.JPG&quot; alt=&quot;Classes&quot; /&gt;&lt;/p&gt;
+
 &lt;h3 id=&quot;5-3enums&quot;&gt;5-3.Enums&lt;/h3&gt;
+
 &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/72294509/144005508-8177111e-e9be-4285-b7fc-a93181b1fa0c.JPG&quot; alt=&quot;Enums1&quot; /&gt;
 &lt;img src=&quot;https://user-images.githubusercontent.com/72294509/144005513-78068e4d-2ea5-4194-a1b3-90fc4dc70d0b.JPG&quot; alt=&quot;Enums2&quot; /&gt;
-&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;6-develop&quot;&gt;6. DEVELOP&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;ARCORE + SCENEFORM 방식을 활용하여 Hanssem AR Furniture placement app을 개발하도록 한다.&lt;/li&gt;
-  &lt;li&gt;3D objects → .glb file 형식&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f088f9c5-5cca-4303-a6ee-644bae67056e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20211130T064023Z&amp;amp;X-Amz-Expires=86400&amp;amp;X-Amz-Signature=733c2e802f4b4499254c0d1f711a52cf6e4ad12f436a08f2590cc50cc6497f7b&amp;amp;X-Amz-SignedHeaders=host&amp;amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;amp;x-id=GetObject&quot; alt=&quot;ARCORE2&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;가구 선택 부분 및 모델 연결을 제외한 &lt;strong&gt;‘배치’&lt;/strong&gt; 기능과 &lt;strong&gt;‘길이 측정’&lt;/strong&gt; 기능 중점적으로 개발
-&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;6-1-coding&quot;&gt;6-1. Coding&lt;/h3&gt;
-
-&lt;p&gt;fragment로 구현 된 프로젝트&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;fragment&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;→ FragmentActivity 내의 어떤 동작 또는 사용자 인터페이스의 일부&lt;/p&gt;
-
-&lt;p&gt;→ Activity의 모듈식 세션&lt;/p&gt;
-
-&lt;p&gt;→ AR 시스템 상태를 관리하고 세션 수명주기 처리 ( ARCORE API의 주요 진입 점 )&lt;/p&gt;
-
-&lt;p&gt;→ 카메라 이미지와 장치 Pose에 접근할 수 있는 Frame을 수신할 수 있다.&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ArFragment&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arFragment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Renderable&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;renderable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;ArFragment&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;AR APP의 필수 요소, ARCORE의 기본 구성 요소들을 사용하게 해주는 SCENEFORM fragment.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Renderable&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Node(하나의 Object가 차지하는 영역)에 연결하여 하나의 Object를 3D 공간에서 rendering 하기 위한 기본 Class&lt;/p&gt;</content><author><name></name></author><category term="Application" /><category term="ARCORE" /><category term="Hanssem" /><category term="ar" /><summary type="html">본 게시물은 2021.07 ~ 08 한샘에서 AR 가구 배치 어플리케이션을 개발할 때, 공부했던 내용입니다. Hanssem AR(Augmented Reality) Placement application development</summary></entry><entry><title type="html">Jung-Log</title><link href="http://localhost:4000/intro/" rel="alternate" type="text/html" title="Jung-Log" /><published>2021-11-30T00:55:25+09:00</published><updated>2021-11-30T00:55:25+09:00</updated><id>http://localhost:4000/Introduce</id><content type="html" xml:base="http://localhost:4000/intro/">&lt;h3&gt;Jung-Log 시작하기&lt;/h3&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="Application" /><category term="ARCORE" /><category term="Hanssem" /><category term="ar" /><summary type="html">본 게시물은 2021.07 ~ 08 한샘에서 AR 가구 배치 어플리케이션을 개발할 때, 공부했던 내용입니다. Hanssem AR(Augmented Reality) Placement application development</summary></entry><entry><title type="html">Jung-Log</title><link href="http://localhost:4000/intro/" rel="alternate" type="text/html" title="Jung-Log" /><published>2021-11-30T00:55:25+09:00</published><updated>2021-11-30T00:55:25+09:00</updated><id>http://localhost:4000/Introduce</id><content type="html" xml:base="http://localhost:4000/intro/">&lt;h3&gt;Jung-Log 시작하기&lt;/h3&gt;
 
 &lt;p&gt;👩‍💻 안녕하세요 정지영입니다.&lt;/p&gt;
 &lt;p&gt;📚 동국대학교 소프트웨어 구조 연구실 학부 연구생입니다.

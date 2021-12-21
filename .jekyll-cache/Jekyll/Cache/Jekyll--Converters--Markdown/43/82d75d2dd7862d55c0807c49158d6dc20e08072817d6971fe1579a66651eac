@@ -1,4 +1,4 @@
-I"�P<p><br /></p>
+I"�F<p><br /></p>
 <ul>
   <li>본 게시물은 2021.07 ~ 08 한샘에서 AR 가구 배치 어플리케이션을 개발할 때, 공부했던 내용입니다.</li>
   <li>Hanssem AR(Augmented Reality) Placement application development</li>
@@ -7,6 +7,7 @@
 <p>(21/07/01 - 21/08/31)</p>
 
 <p><br /><br /></p>
+
 <hr />
 
 <h1 id="1-arcore-">1. ARCORE ?</h1>
@@ -20,7 +21,7 @@
 
 <ol>
   <li>모바일 장치가 이동할 때 그 위치를 추적한다.</li>
-  <li>실제 세계에 대한 지속적인 이해를 구축한다. 
+  <li>실제 세계에 대한 지속적인 이해를 구축한다.
 <br /><br /></li>
 </ol>
 
@@ -28,16 +29,17 @@
 
 <p>▶ points들을 추출하는 것 뿐만 아닌, plain(평면) detection을 감지할 수 있고, 주변 영역의 평균 조명 값을 추정할 수 있다. ARCORE는 이러한 모든 기능들이 결합되어, 카메라로 실제로 촬영되는 공간에 대한 자체 이해를 구축한다. 따라서 촬영되는 현실 세계에 대한 구축된 이해를 바탕으로 객체, 주석, 또는 기타 정보 등을 가상으로 배치할 수 있다.</p>
 
-<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8ced052f-6b5c-45bc-8419-f09c13da8051/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20211130T063243Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=a0e3d37e958a9e068fc6b2ca4047333273da48087e44eeb4f231411ead4b880f&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;x-id=GetObject" alt="ARCORE Flow" /></p>
+<p><img src="https://user-images.githubusercontent.com/72294509/146884625-819285a6-06a1-44a5-86bc-e68b8d57e4f1.png" alt="ARCORE Flow" /></p>
 
 <p><br /><br /><br /></p>
+
 <h1 id="2-fundamental-concepts">2. Fundamental concepts</h1>
 
 <h3 id="2-1-motion-tracking">2-1. Motion tracking</h3>
 
-<p>실제 환경을 촬영하고 있는 핸드폰이 움직일 때, ARCORE은 ‘simultaneous localization and mapping’ (= SLAM) 이라는 process를 사용하여 주변 환경과 관련된 위치를 파악한다. ARCORE는 카메라의 이미지에서 시각적으로 구분되는 특징인 ‘Feature points’를 감지하고 이를 통하여 위치의 변화를 감지한다.  해당 points들은 IMU(관성 측정 장비)의 관성 측정치와 결합되며, 시간이 지남에 따라 전 세계를 기준으로 현재 카메라가 촬영하고 있는 장소의 ‘Pose’ (Position and Orientation)를 추정하게 된다.</p>
+<p>실제 환경을 촬영하고 있는 핸드폰이 움직일 때, ARCORE은 ‘simultaneous localization and mapping’ (= SLAM) 이라는 process를 사용하여 주변 환경과 관련된 위치를 파악한다. ARCORE는 카메라의 이미지에서 시각적으로 구분되는 특징인 ‘Feature points’를 감지하고 이를 통하여 위치의 변화를 감지한다. 해당 points들은 IMU(관성 측정 장비)의 관성 측정치와 결합되며, 시간이 지남에 따라 전 세계를 기준으로 현재 카메라가 촬영하고 있는 장소의 ‘Pose’ (Position and Orientation)를 추정하게 된다.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>💡 SLAM은 주로 자율 주행 차량에 사용되며, 기기의 주변 환경 지도를 작성하는 동시에, 기기의 위치를 작성된 지도 안에서 인식하는 기법이다. 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>💡 SLAM은 주로 자율 주행 차량에 사용되며, 기기의 주변 환경 지도를 작성하는 동시에, 기기의 위치를 작성된 지도 안에서 인식하는 기법이다.
 이 알고리즘을 통해 기기는 미지의 환경에 대한 지도를 작성할 수 있으며, 엔지니어는 지도 정보를 활용하여 환경 파악 및 장애물 회피 등의 작업을 수행할 수 있다.
 </code></pre></div></div>
 
@@ -46,7 +48,7 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>💡 SLAM process는 조금 더 광범위한 의미로 COM(concurrent odometry and mapping) process라고도 불린다.
 </code></pre></div></div>
 
-<p>▶ 3D contents를 rendering하는 가상 카메라의 Pose와 ARCORE에서 제공하는 나의 핸드폰 장치 카메라의  Pose를 일치 시킨다. 따라서 개발자는 올바른 위치에 가상 3D contents를  rendering할 수 있으며, 핸드폰 장치에서 촬영되고 있는 화면과 rendering되는 가상 이미지가 겹쳐져 가상 contents가 실제 촬영되고 있는 세계의 일부인 것처럼 보이게 한다.
+<p>▶ 3D contents를 rendering하는 가상 카메라의 Pose와 ARCORE에서 제공하는 나의 핸드폰 장치 카메라의 Pose를 일치 시킨다. 따라서 개발자는 올바른 위치에 가상 3D contents를 rendering할 수 있으며, 핸드폰 장치에서 촬영되고 있는 화면과 rendering되는 가상 이미지가 겹쳐져 가상 contents가 실제 촬영되고 있는 세계의 일부인 것처럼 보이게 한다.
 <br /><br /></p>
 
 <h3 id="2-2-environmental-understanding">2-2. Environmental understanding</h3>
@@ -55,7 +57,7 @@
 
 <p>ARCORE는 테이블이나 벽과 같은 일반적인 수직이나 수평의 표면에 있는 것처럼 보이는 feature points의 cluster(군집들)를 찾고, 이러한 표면들을 APP 상에서 plane으로 사용할 수 있도록 한다. ARCORE는 또한 각 평면의 경계를 결정하고, 해당 정보를 앱에 제공할 수 있다. 따라서 평면과, 평면의 경계 등의 여러 정보들을 사용하여 plane에 가상 개체를 배치할 수 있다.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>💡 ARCORE는 feature points(시각적으로 구분되는 점)들을 사용하여 plane을 감지하기 때문에, 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>💡 ARCORE는 feature points(시각적으로 구분되는 점)들을 사용하여 plane을 감지하기 때문에,
 질감과 물건이 없는 흰색 벽, 평면은 제대로 감지되지 않을 수 있다.
 </code></pre></div></div>
 
@@ -70,16 +72,16 @@
 
 <h3 id="2-4-light-estimation">2-4. Light estimation</h3>
 
-<p>ARCORE는 환경의 조명에 대한 정보를 감지하고, 주어진 카메라 이미지에 대한 평균 강도와 색상 보정을 제공할 수 있다. 해당 정보를 사용하여 주변 환경과 동일한 조건에서 가상 contents를 비추어 현실감을 높인다. 
+<p>ARCORE는 환경의 조명에 대한 정보를 감지하고, 주어진 카메라 이미지에 대한 평균 강도와 색상 보정을 제공할 수 있다. 해당 정보를 사용하여 주변 환경과 동일한 조건에서 가상 contents를 비추어 현실감을 높인다.
 <br /><br /></p>
 
 <h3 id="2-5-user-interaction">2-5. User interaction</h3>
 
 <p>ARCORE는 hit testing을 사용하여 휴대 전화 화면상의 (x, y) 좌표를 취하고, 카메라의 세계에서 광선을 투과하여 모든 평면과 광선이 교차하는 feature points, 세계 공간에서 교차하는 pose들을 활용하여 사용자는 환경에서 개체를 선택하거나 다른 방식으로 상호작용 할 수 있다.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>💡 Hit testing은 적중 테스트라고 하며, 포인트(터치 포인트 등)이 화면에 그려진 그래픽 객체(UIView 등)과 만나는지 여부를 결정하는 Process이다. 
-사용자가 기기 화면을 Tap하면 ARCORE는 해당 (x,y) 좌표에서 광선이 뻗어나간다 가정하고, 
-해당 광선이 교차하는 모든 plane, feature points, pose를 반환한다. 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>💡 Hit testing은 적중 테스트라고 하며, 포인트(터치 포인트 등)이 화면에 그려진 그래픽 객체(UIView 등)과 만나는지 여부를 결정하는 Process이다.
+사용자가 기기 화면을 Tap하면 ARCORE는 해당 (x,y) 좌표에서 광선이 뻗어나간다 가정하고,
+해당 광선이 교차하는 모든 plane, feature points, pose를 반환한다.
 해당 결과로 Anchor를 만들게 된다.
 </code></pre></div></div>
 
@@ -125,14 +127,15 @@
 
 <p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/eee43188-bb4d-4b44-ac6a-d2fa1d7e7051/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20211130T063933Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=617914cd02ac4ff0db6d8d5d8a5830b176dd4eaf8a2c3764872b43fc666290ce&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;x-id=GetObject" alt="ARCORE Flow2" /></p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Anchor</span> <span class="n">anchor</span> <span class="o">=</span> <span class="n">hitResult</span><span class="o">.</span><span class="na">createAnchor</span><span class="o">();</span> 
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Anchor</span> <span class="n">anchor</span> <span class="o">=</span> <span class="n">hitResult</span><span class="o">.</span><span class="na">createAnchor</span><span class="o">();</span>
 <span class="c1">// plane tap시 hitresult 에서 anchor 생성</span>
-<span class="nc">AnchorNode</span> <span class="n">anchorNode</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">AnchorNode</span><span class="o">(</span><span class="n">anchor</span><span class="o">);</span> 
+<span class="nc">AnchorNode</span> <span class="n">anchorNode</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">AnchorNode</span><span class="o">(</span><span class="n">anchor</span><span class="o">);</span>
 <span class="c1">// 공간에 anchor을 기반으로 자동으로 배치되는 Node(Node : 하나의 오브젝트가 차지하는 영역)</span>
 <span class="n">anchorNode</span><span class="o">.</span><span class="na">setParent</span><span class="o">(</span><span class="n">arFragment</span><span class="o">.</span><span class="na">getArSceneView</span><span class="o">().</span><span class="na">getScene</span><span class="o">());</span>
-<span class="c1">// (getScene : 장면 반환 / getArSceneView : 장면 랜더링(arsceneview) 반환) </span>
+<span class="c1">// (getScene : 장면 반환 / getArSceneView : 장면 랜더링(arsceneview) 반환)</span>
 <span class="c1">// -&gt; parentNode로 set</span>
 </code></pre></div></div>
+
 <p><br /><br /></p>
 
 <h3 id="2-8-augmented-images">2-8. Augmented Images</h3>
@@ -141,7 +144,7 @@
 
 <p>ARCORE는 흔들리는 2D 이미지 또한 추적할 수 있다.</p>
 
-<p>이미지를 오프라인으로 컴파일하여 이미지 데이터베이스를 만들거나, 개별 이미지를 장치에서 실시간으로 추가할 수 있다. 해당 이미지가 등록될 때 마다, ARCORE는 이러한 이미지, 이미지의 경계들을 감지하고 해당 pose를 반환하게 된다. 
+<p>이미지를 오프라인으로 컴파일하여 이미지 데이터베이스를 만들거나, 개별 이미지를 장치에서 실시간으로 추가할 수 있다. 해당 이미지가 등록될 때 마다, ARCORE는 이러한 이미지, 이미지의 경계들을 감지하고 해당 pose를 반환하게 된다.
 <br /><br /></p>
 
 <h3 id="2-9-sharing">2-9. Sharing</h3>
@@ -212,57 +215,16 @@
 <h1 id="5-arcore-methods">5. ARCORE METHODS</h1>
 
 <h3 id="5-1interfaces">5-1.Interfaces</h3>
+
 <p><img src="https://user-images.githubusercontent.com/72294509/144005515-57a6f1fb-668e-409b-bbd7-6a80719377c9.JPG" alt="Interfaces" /></p>
+
 <h3 id="5-2classes">5-2.Classes</h3>
+
 <p><img src="https://user-images.githubusercontent.com/72294509/144005518-d377c03a-2a15-4868-81b6-42d811c9bf35.JPG" alt="Classes" /></p>
+
 <h3 id="5-3enums">5-3.Enums</h3>
+
 <p><img src="https://user-images.githubusercontent.com/72294509/144005508-8177111e-e9be-4285-b7fc-a93181b1fa0c.JPG" alt="Enums1" />
 <img src="https://user-images.githubusercontent.com/72294509/144005513-78068e4d-2ea5-4194-a1b3-90fc4dc70d0b.JPG" alt="Enums2" />
 <br /><br /><br /><br /></p>
-
-<h1 id="6-develop">6. DEVELOP</h1>
-
-<ul>
-  <li>ARCORE + SCENEFORM 방식을 활용하여 Hanssem AR Furniture placement app을 개발하도록 한다.</li>
-  <li>3D objects → .glb file 형식</li>
-</ul>
-
-<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f088f9c5-5cca-4303-a6ee-644bae67056e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20211130T064023Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=733c2e802f4b4499254c0d1f711a52cf6e4ad12f436a08f2590cc50cc6497f7b&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;x-id=GetObject" alt="ARCORE2" /></p>
-
-<ul>
-  <li>가구 선택 부분 및 모델 연결을 제외한 <strong>‘배치’</strong> 기능과 <strong>‘길이 측정’</strong> 기능 중점적으로 개발
-<br /><br /></li>
-</ul>
-
-<h3 id="6-1-coding">6-1. Coding</h3>
-
-<p>fragment로 구현 된 프로젝트</p>
-
-<ul>
-  <li>fragment</li>
-</ul>
-
-<p>→ FragmentActivity 내의 어떤 동작 또는 사용자 인터페이스의 일부</p>
-
-<p>→ Activity의 모듈식 세션</p>
-
-<p>→ AR 시스템 상태를 관리하고 세션 수명주기 처리 ( ARCORE API의 주요 진입 점 )</p>
-
-<p>→ 카메라 이미지와 장치 Pose에 접근할 수 있는 Frame을 수신할 수 있다.</p>
-
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">private</span> <span class="nc">ArFragment</span> <span class="n">arFragment</span><span class="o">;</span>
-<span class="kd">private</span> <span class="nc">Renderable</span> <span class="n">renderable</span><span class="o">;</span>
-</code></pre></div></div>
-
-<ul>
-  <li>ArFragment</li>
-</ul>
-
-<p>AR APP의 필수 요소, ARCORE의 기본 구성 요소들을 사용하게 해주는 SCENEFORM fragment.</p>
-
-<ul>
-  <li>Renderable</li>
-</ul>
-
-<p>Node(하나의 Object가 차지하는 영역)에 연결하여 하나의 Object를 3D 공간에서 rendering 하기 위한 기본 Class</p>
 :ET
