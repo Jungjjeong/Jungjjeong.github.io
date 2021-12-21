@@ -2,14 +2,18 @@
  * rougify style github
  */
 
-.highlight table td { padding: 5px; }
-.highlight table pre { margin: 0; }
+.highlight table td {
+  padding: 5px;
+}
+.highlight table pre {
+  margin: 0;
+}
 .highlight .cm {
-  color: #999988;
+  color: #74746d;
   font-style: italic;
 }
 .highlight .cp {
-  color: #999999;
+  color: #74746d;
   font-weight: bold;
 }
 .highlight .c1 {
@@ -17,11 +21,14 @@
   font-style: italic;
 }
 .highlight .cs {
-  color: #999999;
+  color: #74746d;
   font-weight: bold;
   font-style: italic;
 }
-.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+.highlight .c,
+.highlight .ch,
+.highlight .cd,
+.highlight .cpf {
   color: #999988;
   font-style: italic;
 }
@@ -41,7 +48,7 @@
   color: #943838;
 }
 .highlight .gh {
-  color: #999999;
+  color: #74746d;
 }
 .highlight .gi {
   color: #000000;
@@ -86,7 +93,8 @@
   color: #445588;
   font-weight: bold;
 }
-.highlight .k, .highlight .kv {
+.highlight .k,
+.highlight .kv {
   color: #000000;
   font-weight: bold;
 }
@@ -105,7 +113,9 @@
 .highlight .mo {
   color: #009999;
 }
-.highlight .m, .highlight .mb, .highlight .mx {
+.highlight .m,
+.highlight .mb,
+.highlight .mx {
   color: #009999;
 }
 .highlight .sa {
@@ -145,17 +155,18 @@
 .highlight .ss {
   color: #990073;
 }
-.highlight .s, .highlight .dl {
+.highlight .s,
+.highlight .dl {
   color: #d14;
 }
 .highlight .na {
   color: #4fa3a3;
 }
 .highlight .bp {
-  color: #999999;
+  color: #74746d;
 }
 .highlight .nb {
-  color: #0086B3;
+  color: #0086b3;
 }
 .highlight .nc {
   color: #445588;
@@ -175,7 +186,8 @@
   color: #c55f81;
   font-weight: bold;
 }
-.highlight .nf, .highlight .fm {
+.highlight .nf,
+.highlight .fm {
   color: #c55f81;
   font-weight: bold;
 }
@@ -198,7 +210,8 @@
 .highlight .vi {
   color: #4fa3a3;
 }
-.highlight .nv, .highlight .vm {
+.highlight .nv,
+.highlight .vm {
   color: #4fa3a3;
 }
 .highlight .ow {
