@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+    title,a ,p ,h1, h2, h3{
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+  </style>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Jung-Log" />
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>MVC Pattern Practice | Jung-Log</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="MVC Pattern Practice" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="MVC Pattern" />
+<meta property="og:description" content="MVC Pattern" />
+<link rel="canonical" href="http://localhost:4000/web/2021/12/21/MVCPattern.html" />
+<meta property="og:url" content="http://localhost:4000/web/2021/12/21/MVCPattern.html" />
+<meta property="og:site_name" content="Jung-Log" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-12-21T16:05:25+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="MVC Pattern Practice" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/web/2021/12/21/MVCPattern.html"},"@type":"BlogPosting","url":"http://localhost:4000/web/2021/12/21/MVCPattern.html","headline":"MVC Pattern Practice","dateModified":"2021-12-21T16:05:25+09:00","datePublished":"2021-12-21T16:05:25+09:00","description":"MVC Pattern","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="/assets/css/open-color.css">
+  <link rel="stylesheet" href="/assets/css/hydure.css">
+
+  <script async src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"></script>
+
+  
+</head>
+
+
+  <body>
+    <div id="layout" class="pure-g">
+      
+      
+      <div class="sidebar pure-u-1 pure-u-md-1-4" style="background-image: url(https://user-images.githubusercontent.com/72294509/143907445-573e198b-474d-4d67-8500-736a9bfed5fc.jpg);">
+        <div class="sidebar-shield">
+          <header class="header">
+  <a class="brand-title" href="/">Jung-Log</a>
+  <p class="brand-tagline"></p>
+
+  
+    <nav class="nav pure-menu">
+      <ul class="pure-menu-list">
+      
+        <li class="nav-item pure-menu-item">
+          <a href="/" class="pure-menu-link ">
+            Home
+          </a>
+        </li>
+      
+        <li class="nav-item pure-menu-item">
+          <a href="/intro/" class="pure-menu-link ">
+            Introduce
+          </a>
+        </li>
+      
+        <li class="nav-item pure-menu-item">
+          <a href="/categories/" class="pure-menu-link ">
+            Categories
+          </a>
+        </li>
+      
+      </ul>
+    </nav>
+  
+
+  
+    <div class="social pure-menu pure-menu-horizontal">
+      <ul class="social-list pure-menu-list">
+        
+          <li class="social-item pure-menu-item">
+            <a class="pure-menu-link pure-button" href="sky990106@naver.com" target="_blank">
+              <i class="fas fa-envelope" title="Email"></i>
+            </a>
+          </li>
+        
+          <li class="social-item pure-menu-item">
+            <a class="pure-menu-link pure-button" href="https://github.com/Jungjjeong" target="_blank">
+              <i class="fab fa-github" title="GitHub"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+</header>
+
+        </div>
+      </div>
+      <div class="content pure-u-1 pure-u-md-3-4">
+        <div class="main">
+          <article class="post">
+  
+    <div class="post-meta">
+      <ul class="post-categories"><li>
+            <span class="post-category">Web</span></li></ul>
+    </div>
+  
+  <h1 class="post-title">MVC Pattern Practice</h1>
+  <div class="post-meta">
+    <time datetime="2021-12-21T16:05:25+09:00" itemprop="datePublished">
+      21 Dec 2021
+    </time></div>
+  
+  <h1 id="mvc-pattern">MVC Pattern</h1>
+
+<blockquote>
+  <p>개념만 배우고 한번도 적용해본 적 없는 MVC 페턴.
+직접 코드에 적용시켜 보고자 글을 작성합니다.</p>
+</blockquote>
+
+<p><img src="https://user-images.githubusercontent.com/72294509/146886750-ba789870-aea4-4a94-82b7-363e0dd7e638.jpeg" alt="Untitled" /></p>
+
+<p>말이 됩니까..</p>
+
+<p>4학년이 이제서야 MVC 페턴 실습을 하고 있다는 것이..!</p>
+
+<p><br /><br /></p>
+
+<h2 id="mvc가-뭘까">MVC가 뭘까</h2>
+
+<p>우선 MVC란 Model, View, Controller의 세 영역이다.</p>
+
+<p>즉, 각 영역의 코드 결합도를 최소화 시키는 것을 목적으로 하는 개발 페턴</p>
+
+<ol>
+  <li>사용자는 application과 상호작용</li>
+  <li>controller의 event handler 작동</li>
+  <li>Model에서 데이터 전송 → controller → 결과 : View</li>
+  <li>View는 결과 rendering</li>
+</ol>
+
+<p>→ 결론적으로 페턴의 주요 목적은 <strong>모델(기능)과 뷰(렌더링)의 코드 결합도를 최소화</strong> 시키는 것
+<br /><br /></p>
+
+<h2 id="역할-정의">역할 정의</h2>
+
+<p><strong>Model</strong> : 어플리케이션의 비지니스 로직, 사용되는 데이터를 다루는 영역</p>
+
+<p><strong>View</strong> : 최종 사용자에게 보여줄 화면 렌더링 담당</p>
+
+<p><strong>Controller</strong>: Model과 View 영역간의 코드 결합도를 줄여주는 영역 (중요!!)
+<br /><br /></p>
+
+<h2 id="실습-코드">실습 코드</h2>
+
+<ul>
+  <li>이번 우아한 테크코스 프리코스를 진행하며 조금이나마 익숙해질 수 있었던 Class형으로 MVC를 구현해봤다.</li>
+</ul>
+
+<ol>
+  <li>Model.js</li>
+</ol>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Item</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">content</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">content</span> <span class="o">=</span> <span class="nx">content</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">finished</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="kd">class</span> <span class="nx">Model</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">list</span> <span class="o">=</span> <span class="p">[];</span>
+  <span class="p">}</span>
+
+  <span class="nx">addItem</span><span class="p">(</span><span class="nx">content</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">item</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Item</span><span class="p">(</span><span class="nx">content</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">list</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">item</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="nx">removeItem</span><span class="p">(</span><span class="nx">itemIndex</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">list</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">itemIndex</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="nx">checkItem</span><span class="p">(</span><span class="nx">itemIndex</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">currentItem</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">list</span><span class="p">[</span><span class="nx">itemIndex</span><span class="p">];</span>
+    <span class="nx">currentItem</span><span class="p">.</span><span class="nx">finished</span> <span class="o">=</span> <span class="o">!</span><span class="nx">currentItem</span><span class="p">.</span><span class="nx">finished</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ol>
+  <li>View.js</li>
+</ol>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="k">default</span> <span class="kd">class</span> <span class="nx">View</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">list</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">toDoList</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">"</span><span class="s2">.to-do-list</span><span class="dl">"</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">finishedList</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">"</span><span class="s2">.finished-list</span><span class="dl">"</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">list</span> <span class="o">=</span> <span class="nx">list</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nx">showList</span><span class="p">(</span><span class="nx">list</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">finishedList</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">""</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">toDoList</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">""</span><span class="p">;</span>
+
+    <span class="nx">list</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">item</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">item</span><span class="p">.</span><span class="nx">finished</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">item</span><span class="p">);</span>
+        <span class="kd">const</span> <span class="nx">toDoItemHTML</span> <span class="o">=</span>
+          <span class="dl">'</span><span class="s1">&lt;li class="to-do-list__item" id="item-</span><span class="dl">'</span> <span class="o">+</span>
+          <span class="nx">i</span> <span class="o">+</span>
+          <span class="dl">'</span><span class="s1">"&gt;</span><span class="dl">'</span> <span class="o">+</span>
+          <span class="dl">'</span><span class="s1">&lt;div class="item__content"&gt;</span><span class="dl">'</span> <span class="o">+</span>
+          <span class="nx">item</span><span class="p">.</span><span class="nx">content</span> <span class="o">+</span>
+          <span class="dl">"</span><span class="s2">&lt;/div&gt;</span><span class="dl">"</span> <span class="o">+</span>
+          <span class="dl">'</span><span class="s1">&lt;div class="item__action"&gt;</span><span class="dl">'</span> <span class="o">+</span>
+          <span class="dl">'</span><span class="s1">&lt;i class="fa fa-trash"&gt;&lt;/i&gt;</span><span class="dl">'</span> <span class="o">+</span>
+          <span class="dl">'</span><span class="s1">&lt;input type="checkbox"&gt;</span><span class="dl">'</span> <span class="o">+</span>
+          <span class="dl">"</span><span class="s2">&lt;/div&gt;</span><span class="dl">"</span> <span class="o">+</span>
+          <span class="dl">"</span><span class="s2">&lt;/li&gt;</span><span class="dl">"</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">toDoList</span><span class="p">.</span><span class="nx">insertAdjacentHTML</span><span class="p">(</span><span class="dl">"</span><span class="s2">afterbegin</span><span class="dl">"</span><span class="p">,</span> <span class="nx">toDoItemHTML</span><span class="p">);</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">item</span><span class="p">.</span><span class="nx">content</span><span class="p">);</span>
+        <span class="k">return</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="kd">const</span> <span class="nx">finishedItemHTML</span> <span class="o">=</span>
+        <span class="dl">'</span><span class="s1">&lt;li class="to-do-list__item" id="item-</span><span class="dl">'</span> <span class="o">+</span>
+        <span class="nx">i</span> <span class="o">+</span>
+        <span class="dl">'</span><span class="s1">"&gt;</span><span class="dl">'</span> <span class="o">+</span>
+        <span class="dl">'</span><span class="s1">&lt;div class="item__content"&gt;</span><span class="dl">'</span> <span class="o">+</span>
+        <span class="nx">item</span><span class="p">.</span><span class="nx">content</span> <span class="o">+</span>
+        <span class="dl">"</span><span class="s2">&lt;/div&gt;</span><span class="dl">"</span> <span class="o">+</span>
+        <span class="dl">'</span><span class="s1">&lt;div class="item__action"&gt;</span><span class="dl">'</span> <span class="o">+</span>
+        <span class="dl">'</span><span class="s1">&lt;i class="fa fa-trash"&gt;&lt;/i&gt;</span><span class="dl">'</span> <span class="o">+</span>
+        <span class="dl">'</span><span class="s1">&lt;input type="checkbox" checked&gt;</span><span class="dl">'</span> <span class="o">+</span>
+        <span class="dl">"</span><span class="s2">&lt;/div&gt;</span><span class="dl">"</span> <span class="o">+</span>
+        <span class="dl">"</span><span class="s2">&lt;/li&gt;</span><span class="dl">"</span><span class="p">;</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">finishedList</span><span class="p">.</span><span class="nx">insertAdjacentHTML</span><span class="p">(</span><span class="dl">"</span><span class="s2">afterbegin</span><span class="dl">"</span><span class="p">,</span> <span class="nx">finishedItemHTML</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ol>
+  <li>Controller.js</li>
+</ol>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">Model</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">./Model.js</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">View</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">./View.js</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="kd">class</span> <span class="nx">Controller</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">model</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Model</span><span class="p">();</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">view</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">View</span><span class="p">();</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">form</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">forms</span><span class="p">[</span><span class="dl">"</span><span class="s2">list-form</span><span class="dl">"</span><span class="p">];</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">addInput</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">form</span><span class="p">[</span><span class="dl">"</span><span class="s2">add-item__input</span><span class="dl">"</span><span class="p">];</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">searchInput</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">form</span><span class="p">[</span><span class="dl">"</span><span class="s2">search-item__input</span><span class="dl">"</span><span class="p">];</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">section</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">"</span><span class="s2">section</span><span class="dl">"</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">setfunction</span><span class="p">();</span>
+  <span class="p">}</span>
+
+  <span class="nx">setfunction</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">addItem</span><span class="p">();</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">searchItem</span><span class="p">();</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">removeItem</span><span class="p">();</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">checkItem</span><span class="p">();</span>
+  <span class="p">}</span>
+
+  <span class="nx">addItem</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">submit</span><span class="dl">"</span><span class="p">,</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+
+      <span class="kd">const</span> <span class="nx">addVal</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">addInput</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">addVal</span><span class="p">);</span>
+
+      <span class="k">this</span><span class="p">.</span><span class="nx">model</span><span class="p">.</span><span class="nx">addItem</span><span class="p">(</span><span class="nx">addVal</span><span class="p">);</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">model</span><span class="p">.</span><span class="nx">list</span><span class="p">);</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">view</span><span class="p">.</span><span class="nx">showList</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">model</span><span class="p">.</span><span class="nx">list</span><span class="p">);</span>
+
+      <span class="k">this</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">reset</span><span class="p">();</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+
+  <span class="nx">searchItem</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">searchInput</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">input</span><span class="dl">"</span><span class="p">,</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+      <span class="kd">const</span> <span class="nx">searchVal</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">searchInput</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+
+      <span class="kd">const</span> <span class="nx">filterList</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">model</span><span class="p">.</span><span class="nx">list</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">item</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">item</span><span class="p">.</span><span class="nx">content</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">searchVal</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+      <span class="p">});</span>
+
+      <span class="k">this</span><span class="p">.</span><span class="nx">view</span><span class="p">.</span><span class="nx">showList</span><span class="p">(</span><span class="nx">filterList</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+
+  <span class="nx">removeItem</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">section</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">tagName</span> <span class="o">!==</span> <span class="dl">"</span><span class="s2">I</span><span class="dl">"</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">remove</span><span class="dl">"</span><span class="p">);</span>
+      <span class="kd">const</span> <span class="nx">itemId</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">id</span><span class="p">;</span>
+      <span class="kd">const</span> <span class="nx">itemIndex</span> <span class="o">=</span> <span class="nx">itemId</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="dl">"</span><span class="s2">-</span><span class="dl">"</span><span class="p">)[</span><span class="mi">1</span><span class="p">];</span>
+
+      <span class="k">this</span><span class="p">.</span><span class="nx">model</span><span class="p">.</span><span class="nx">removeItem</span><span class="p">(</span><span class="nx">itemIndex</span><span class="p">);</span>
+
+      <span class="k">this</span><span class="p">.</span><span class="nx">view</span><span class="p">.</span><span class="nx">showList</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">model</span><span class="p">.</span><span class="nx">list</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+
+  <span class="nx">checkItem</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">section</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">change</span><span class="dl">"</span><span class="p">,</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">check</span><span class="dl">"</span><span class="p">);</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">tagName</span> <span class="o">!==</span> <span class="dl">"</span><span class="s2">INPUT</span><span class="dl">"</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+
+      <span class="kd">const</span> <span class="nx">itemId</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">id</span><span class="p">;</span>
+      <span class="kd">const</span> <span class="nx">itemIndex</span> <span class="o">=</span> <span class="nx">itemId</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="dl">"</span><span class="s2">-</span><span class="dl">"</span><span class="p">)[</span><span class="mi">1</span><span class="p">];</span>
+
+      <span class="k">this</span><span class="p">.</span><span class="nx">model</span><span class="p">.</span><span class="nx">checkItem</span><span class="p">(</span><span class="nx">itemIndex</span><span class="p">);</span>
+
+      <span class="k">this</span><span class="p">.</span><span class="nx">view</span><span class="p">.</span><span class="nx">showList</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">model</span><span class="p">.</span><span class="nx">list</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ol>
+  <li>index.js</li>
+</ol>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">Controller</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">./Controller.js</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Model</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">./Model.js</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">View</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">./View.js</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="k">new</span> <span class="nx">Model</span><span class="p">();</span>
+<span class="k">new</span> <span class="nx">View</span><span class="p">();</span>
+<span class="k">new</span> <span class="nx">Controller</span><span class="p">();</span>
+</code></pre></div></div>
+
+<ol>
+  <li>index.html (기술 블로그 MVC 실습에서 가져왔다.)</li>
+</ol>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"ko"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;title&gt;</span>mvc pattern practice<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"style.css"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-container"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;header&gt;</span>
+        <span class="nt">&lt;form</span> <span class="na">id=</span><span class="s">"list-form"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-form__add-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"add-item__input"</span> <span class="na">required</span> <span class="na">autofocus</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"✚"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-form__search-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">id=</span><span class="s">"search-item__input"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"search-item__input"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-search"</span><span class="nt">&gt;&lt;/i&gt;</span>
+            <span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/form&gt;</span>
+      <span class="nt">&lt;/header&gt;</span>
+
+      <span class="nt">&lt;section&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"to-do-list"</span><span class="nt">&gt;&lt;/ul&gt;</span>
+        <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"finished-list"</span><span class="nt">&gt;&lt;/ul&gt;</span>
+      <span class="nt">&lt;/section&gt;</span>
+
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://github.com/EastSun5566"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-github"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"module"</span> <span class="na">src=</span><span class="s">"src/index.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<ol>
+  <li>style.css</li>
+</ol>
+
+<p>→ 사실 style은 중요하지 않지만, index.html을 가져올 때 같이 가져왔다.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@import</span> <span class="sx">url(//fonts.googleapis.com/earlyaccess/notosanstc.css)</span><span class="p">;</span>
+
+<span class="o">*</span> <span class="p">{</span>
+  <span class="c">/*  border: 1px solid #000; */</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+  <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--color-primary</span><span class="p">:</span> <span class="m">#d3cce3</span><span class="p">;</span>
+  <span class="py">--color-secondary</span><span class="p">:</span> <span class="no">chocolate</span><span class="p">;</span>
+  <span class="py">--color-font-dark</span><span class="p">:</span> <span class="no">darkred</span><span class="p">;</span>
+  <span class="py">--color-font-light</span><span class="p">:</span> <span class="m">#eee</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">min-height</span><span class="p">:</span> <span class="m">100vh</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">radial-gradient</span><span class="p">(</span><span class="nb">circle</span><span class="p">,</span> <span class="m">#e9e4f0</span><span class="p">,</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-primary</span><span class="p">));</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-font-dark</span><span class="p">);</span>
+  <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">2px</span><span class="p">;</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s1">"Noto Sans TC"</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">justify-content</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* list container */</span>
+<span class="nc">.list-container</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">60%</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">16px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">500px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.list-container</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c">/* form */</span>
+<span class="nf">#list-form</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">justify-content</span><span class="p">:</span> <span class="n">space-around</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.list-form__add-item</span><span class="o">,</span>
+<span class="nc">.list-form__search-item</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">45%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">input</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-secondary</span><span class="p">);</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+
+  <span class="nl">text-indent</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-font-dark</span><span class="p">);</span>
+  <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">2px</span><span class="p">;</span>
+
+  <span class="nl">transition</span><span class="p">:</span> <span class="m">0.5s</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">input</span><span class="nd">:focus</span> <span class="p">{</span>
+  <span class="nl">outline</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* add input */</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s1">"text"</span><span class="o">],</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s1">"search"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#add-item__input</span><span class="nd">:focus</span><span class="o">,</span>
+<span class="nf">#search-item__input</span><span class="nd">:focus</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-secondary</span><span class="p">);</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-font-light</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s1">"text"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">padding-right</span><span class="p">:</span> <span class="m">40px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s1">"submit"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="n">translateY</span><span class="p">(</span><span class="m">-50%</span><span class="p">);</span>
+
+  <span class="nl">transition</span><span class="p">:</span> <span class="m">0.5s</span><span class="p">;</span>
+  <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* serch input */</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s1">"search"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">text-indent</span><span class="p">:</span> <span class="m">24px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">label</span><span class="o">[</span><span class="nt">for</span><span class="o">=</span><span class="s1">"search-item__input"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">left</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="n">translateY</span><span class="p">(</span><span class="m">-50%</span><span class="p">);</span>
+
+  <span class="nl">transition</span><span class="p">:</span> <span class="m">0.5s</span><span class="p">;</span>
+  <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#add-item__input</span><span class="nd">:focus</span> <span class="o">+</span> <span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s1">"submit"</span><span class="o">],</span>
+<span class="nf">#search-item__input</span><span class="nd">:focus</span> <span class="o">+</span> <span class="nt">label</span><span class="o">[</span><span class="nt">for</span><span class="o">=</span><span class="s1">"search-item__input"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-font-light</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c">/* list */</span>
+<span class="nt">ul</span> <span class="p">{</span>
+  <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* to do list */</span>
+<span class="nc">.to-do-list</span><span class="nd">:empty::before</span> <span class="p">{</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="s1">"Nothing to do..."</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">12px</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">lighter</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* finished list */</span>
+<span class="nc">.finished-list</span><span class="nd">:empty::before</span> <span class="p">{</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="s1">"Nothing finished..."</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">12px</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">lighter</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1.5px</span> <span class="nb">solid</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
+
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">justify-content</span><span class="p">:</span> <span class="n">space-between</span><span class="p">;</span>
+  <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+
+  <span class="nl">transition</span><span class="p">:</span> <span class="m">0.5s</span><span class="p">;</span>
+  <span class="c">/*  animation: fadeIn 0.5s both; */</span>
+<span class="p">}</span>
+
+<span class="k">@keyframes</span> <span class="n">fadeIn</span> <span class="p">{</span>
+  <span class="err">0</span><span class="o">%</span> <span class="p">{</span>
+    <span class="nl">opacity</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="err">100</span><span class="o">%</span> <span class="p">{</span>
+    <span class="nl">opacity</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nt">li</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="c">/*  border-color: var(--color-secondary); */</span>
+<span class="p">}</span>
+
+<span class="nc">.item__content</span> <span class="p">{</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="m">80%</span><span class="p">;</span>
+  <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>
+  <span class="nl">text-overflow</span><span class="p">:</span> <span class="n">ellipsis</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* item action */</span>
+<span class="nc">.item__action</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">20%</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">justify-content</span><span class="p">:</span> <span class="n">space-between</span><span class="p">;</span>
+  <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* check input */</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s1">"checkbox"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">appearance</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
+
+  <span class="nl">transition</span><span class="p">:</span> <span class="m">0.3s</span><span class="p">;</span>
+  <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s1">"checkbox"</span><span class="o">]</span><span class="nd">:checked</span><span class="o">,</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s1">"checkbox"</span><span class="o">]</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-secondary</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s1">"checkbox"</span><span class="o">]</span><span class="nd">:checked::after</span> <span class="p">{</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="s1">"✔"</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+  <span class="nl">left</span><span class="p">:</span> <span class="m">35%</span><span class="p">;</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="n">translate</span><span class="p">(</span><span class="m">-50%</span><span class="p">,</span> <span class="m">-50%</span><span class="p">);</span>
+
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#eee</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.fa-trash</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+  <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">aqua</span><span class="p">;</span>
+
+  <span class="nl">transition</span><span class="p">:</span> <span class="m">0.3s</span> <span class="m">0.1s</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.fa-trash</span><span class="nd">::after</span> <span class="p">{</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="s1">""</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">right</span><span class="p">:</span> <span class="m">-10px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+
+  <span class="nl">background-color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-secondary</span><span class="p">);</span>
+  <span class="nl">z-index</span><span class="p">:</span> <span class="m">-1</span><span class="p">;</span>
+
+  <span class="nl">transition</span><span class="p">:</span> <span class="m">0.3s</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.fa-trash</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-font-light</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.fa-trash</span><span class="nd">:hover::after</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">200%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* hr */</span>
+<span class="nt">hr</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">80%</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-secondary</span><span class="p">);</span>
+  <span class="nl">opacity</span><span class="p">:</span> <span class="m">0.5</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.text-center</span> <span class="p">{</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+
+  
+    <div class="post-meta">
+      <i class="post-tags-icon fas fa-tag"></i>
+      <ul class="post-tags"><li>
+            <span class="post-tag">frontend</span></li></ul>
+    </div>
+  
+
+  
+</article>
+
+        </div>
+        <footer class="footer pure-g">
+  <div class="pure-u-1 pure-u-md-1-2">
+    <small>
+      &copy;&nbsp;<time datetime="2021-12-21T16:18:02+09:00">2021</time>. All right reserved.
+    </small>
+  </div>
+
+  <div class="pure-u-1 pure-u-md-1-2">
+    <small>
+      Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> & <a href="https://github.com/zivong/jekyll-theme-hydure" target="_blank">Hydure</a>
+    </small>
+  </div>
+</footer>
+
+      </div>
+    </div>
+
+    
+
+    
+  </body>
+</html>
