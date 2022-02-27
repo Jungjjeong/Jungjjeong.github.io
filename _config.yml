@@ -26,6 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: sky
 github_username:  Jungjjeong
+repository: Jungjjeong/Jungjjeong.github.io
 
 # Build settings
 theme: minima
@@ -35,6 +36,12 @@ plugins:
 category_archive:
   type: liquid
   path: /categories/
+
+comments:
+  provider: utterances
+  utterances:
+    theme: preferred-color-scheme
+    issue_term: pathname
 
 # Exclude from processing.
 # The following items will not be processed, by default.
