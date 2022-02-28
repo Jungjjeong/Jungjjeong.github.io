@@ -1,38 +1,42 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
-  <style>
-    @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-    title,a ,p ,h1, h2, h3{
-      font-family: 'Noto Sans KR', sans-serif;
-    }
-  </style>
-  {% include head.html %}
+---
+---
 
-  <body>
-    <div id="layout" class="pure-g">
-      {% assign cover = site.cover | default: "https://user-images.githubusercontent.com/72294509/143907445-573e198b-474d-4d67-8500-736a9bfed5fc.jpg" %}
-      {% if page.cover %}
-        {% assign cover = page.cover %}
-      {% endif %}
-      <div class="sidebar pure-u-1 pure-u-md-1-4" {% if cover %}style="background-image: url({{ cover | relative_url }});"{% endif %}>
-        <div class="sidebar-shield">
-          {% include header.html %}
-        </div>
-      </div>
-      <div class="content pure-u-1 pure-u-md-3-4">
-        <div class="main">
-          {{ content }}
-        </div>
-        {% include footer.html %}
-      </div>
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+    {% include_cached skip-links.html %}
+    {% include_cached browser-upgrade.html %}
+    {% include_cached masthead.html %}
+
+    <div class="initial-content">
+      {{ content }}
     </div>
 
-    {% if page.math %}
-      {% include mathjax.html %}
+    {% if site.search == true %}
+      <div class="search-content">
+        {% include_cached search/search_form.html %}
+      </div>
     {% endif %}
 
-    {% if jekyll.environment == 'production' and site.google_analytics %}
-      {% include google-analytics.html %}
-    {% endif %}
+    <div id="footer" class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include_cached footer.html %}
+      </footer>
+    </div>
+
+    {% include scripts.html %}
+
   </body>
 </html>
