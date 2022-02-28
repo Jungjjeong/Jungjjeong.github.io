@@ -24,7 +24,7 @@ description              : "개발 일기장."
 url                      : "https://Jungjjeong.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "Jungjjeong/Jungjjeong.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : /assets/images/profile.png"
 logo                     : "./assets/images/blog.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "Haeyum"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile.jpg"
   bio              : "즐거운 개발자"
   location         : "Seoul"
   email            :
@@ -285,6 +285,10 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+      toc : true
+      toc_label : Contents
+      sidebar:
+        nav : "docs"
