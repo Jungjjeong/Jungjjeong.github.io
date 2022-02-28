@@ -1,7 +1,7 @@
 ---
 layout: single
-title : "두번째"
-categories : [App]
+title : "[iOS] ARKIT by Apple"
+categories : [App, iOS]
 ---
 
 

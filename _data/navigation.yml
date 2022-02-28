@@ -15,6 +15,8 @@ main:
 
 docs:
   - title: Web
-    url: /categories/web/
+    url: /web/
   - title: App
-    url: /categories/app/
+    url: /app/
+  - title: CS
+    url: /cs/

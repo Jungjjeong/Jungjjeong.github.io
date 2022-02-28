@@ -1,6 +1,6 @@
 ---
 layout: archive
-permalink: categories/app
+permalink: app/
 title: "App"
 
 author_profile: true

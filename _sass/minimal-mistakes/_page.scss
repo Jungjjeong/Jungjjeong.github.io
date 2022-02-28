@@ -112,8 +112,9 @@ body {
 
   p,
   li,
-  dl {
-    font-size: 1em;
+  dl,
+  aside {
+    font-size: 0.73em;
   }
 
   /* paragraph indents */
@@ -128,6 +129,7 @@ body {
       }
     }
   }
+  
 
   a:not(.btn) {
     &:hover {
