@@ -10,9 +10,11 @@ main:
     url: /blog/
   - title: "Categories"
     url: /categories/
+  - title: "About"
+    url : /about/
 
 docs:
   - title: Web
-    url: categories/web/
+    url: /categories/web/
   - title: App
-    url: categories/app/
+    url: /categories/app/
