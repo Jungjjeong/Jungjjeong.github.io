@@ -16,9 +16,9 @@ categories : [App, Android]
 
  ARCORE은 AR 경험을 빌드하기 위한 Google의 플랫폼이며, 다양한 API를 사용하여 휴대폰에서 가상 contents를 볼 수 있다. 
 
-<b>
-💡 Android 7.0 (Nougat) 이상 Android 휴대폰에서 작동하도록 설계.
-</b>
+
+> 💡 Android 7.0 (Nougat) 이상 Android 휴대폰에서 작동하도록 설계.
+
 <br>
 
 기본적으로 ARCORE는 두 가지 작업을 수행한다. 
@@ -39,13 +39,13 @@ categories : [App, Android]
 
  실제 환경을 촬영하고 있는 핸드폰이 움직일 때, ARCORE은 'simultaneous localization and mapping' (= SLAM) 이라는 process를 사용하여 주변 환경과 관련된 위치를 파악한다. <br>ARCORE는 카메라의 이미지에서 시각적으로 구분되는 특징인 'Feature points'를 감지하고 이를 통하여 위치의 변화를 감지한다.  <br>해당 points들은 IMU(관성 측정 장비)의 관성 측정치와 결합되며, 시간이 지남에 따라 전 세계를 기준으로 현재 카메라가 촬영하고 있는 장소의 'Pose' (Position and Orientation)를 추정하게 된다. 
 <br><br>
-<b>
-💡 SLAM은 주로 자율 주행 차량에 사용되며, 기기의 주변 환경 지도를 작성하는 동시에, 기기의 위치를 작성된 지도 안에서 인식하는 기법이다.  이 알고리즘을 통해 기기는 미지의 환경에 대한 지도를 작성할 수 있으며, 엔지니어는 지도 정보를 활용하여 환경 파악 및 장애물 회피 등의 작업을 수행할 수 있다.
-</b>
+
+> 💡 SLAM은 주로 자율 주행 차량에 사용되며, 기기의 주변 환경 지도를 작성하는 동시에, 기기의 위치를 작성된 지도 안에서 인식하는 기법이다.  이 알고리즘을 통해 기기는 미지의 환경에 대한 지도를 작성할 수 있으며, 엔지니어는 지도 정보를 활용하여 환경 파악 및 장애물 회피 등의 작업을 수행할 수 있다.
+
 <br><br>
-<b>
-💡 SLAM process는 조금 더 광범위한 의미로 COM(concurrent odometry and mapping) process라고도 불린다.
-</b>
+
+> 💡 SLAM process는 조금 더 광범위한 의미로 COM(concurrent odometry and mapping) process라고도 불린다.
+
 <br><br>
  3D contents를 rendering하는 가상 카메라의 Pose와 ARCORE에서 제공하는 나의 핸드폰 장치 카메라의  Pose를 일치 시킨다. <br>따라서 개발자는 올바른 위치에 가상 3D contents를  rendering할 수 있으며, 핸드폰 장치에서 촬영되고 있는 화면과 rendering되는 가상 이미지가 겹쳐져 가상 contents가 실제 촬영되고 있는 세계의 일부인 것처럼 보이게 한다.
 
@@ -56,9 +56,9 @@ categories : [App, Android]
  ARCORE는 테이블이나 벽과 같은 일반적인 수직이나 수평의 표면에 있는 것처럼 보이는 feature points의 cluster(군집들)를 찾고, 이러한 표면들을 APP 상에서 plane으로 사용할 수 있도록 한다. <br>ARCORE는 또한 각 평면의 경계를 결정하고, 해당 정보를 앱에 제공할 수 있다. 따라서 평면과, 평면의 경계 등의 여러 정보들을 사용하여 plane에 가상 개체를 배치할 수 있다. 
 
 <br>
-<b>
-💡 ARCORE는 feature points(시각적으로 구분되는 점)들을 사용하여 plane을 감지하기 때문에, 질감과 물건이 없는 흰색 벽, 평면은 제대로 감지되지 않을 수 있다.
-</b>
+
+> 💡 ARCORE는 feature points(시각적으로 구분되는 점)들을 사용하여 plane을 감지하기 때문에, 질감과 물건이 없는 흰색 벽, 평면은 제대로 감지되지 않을 수 있다.
+
 <br>
 
 ## 2-3. Depth understanding
@@ -76,9 +76,9 @@ categories : [App, Android]
 
  ARCORE는 hit testing을 사용하여 휴대 전화 화면상의 (x, y) 좌표를 취하고, 카메라의 세계에서 광선을 투과하여 모든 평면과 광선이 교차하는 feature points, 세계 공간에서 교차하는 pose들을 활용하여 사용자는 환경에서 개체를 선택하거나 다른 방식으로 상호작용 할 수 있다. 
 <br><br>
-<b>
-💡 Hit testing은 적중 테스트라고 하며, 포인트(터치 포인트 등)이 화면에 그려진 그래픽 객체(UIView 등)과 만나는지 여부를 결정하는 Process이다. <br>사용자가 기기 화면을 Tap하면 ARCORE는 해당 (x,y) 좌표에서 광선이 뻗어나간다 가정하고, 해당 광선이 교차하는 모든 plane, feature points, pose를 반환한다. 해당 결과로 Anchor를 만들게 된다.
-</b>
+
+> 💡 Hit testing은 적중 테스트라고 하며, 포인트(터치 포인트 등)이 화면에 그려진 그래픽 객체(UIView 등)과 만나는지 여부를 결정하는 Process이다. <br>사용자가 기기 화면을 Tap하면 ARCORE는 해당 (x,y) 좌표에서 광선이 뻗어나간다 가정하고, 해당 광선이 교차하는 모든 plane, feature points, pose를 반환한다. 해당 결과로 Anchor를 만들게 된다.
+
 <br>
 
 ```java
@@ -107,9 +107,9 @@ Pose objectPose = currentAnchor[0].getPose();
 → .getPose(); 사용하여 특정 Point의 Pose 반환 가능 
 
 <br>
-<b>
-💡 ARCORE는 표면의 각도를 감지하기 위해 feature points를 사용하기 때문에, 흰색 벽과 같은 질감이 없는 표면은 제대로 감지되지 않을 수 있다.
-</b>
+
+> 💡 ARCORE는 표면의 각도를 감지하기 위해 feature points를 사용하기 때문에, 흰색 벽과 같은 질감이 없는 표면은 제대로 감지되지 않을 수 있다.
+
 
 ## 2-7. Anchors and trackables
 
@@ -117,9 +117,9 @@ Pose objectPose = currentAnchor[0].getPose();
 
  pose가 변경될 수 있다는 사실은, ARCORE가 시간이 지남에 따라 평면과 feature points와 같은 환경적 object들에 대한 위치 변경 정보를 업데이트 할 수 있다는 의미이다. <br>plane들과 points는 'trackable'라고 불리는 특수한 타입의 object들이다. 이름에서 알 수 있듯이 이는 ARCORE가 시간이 지남에 따라 추적할 개체들이다. 가상 object들을 'trackable' object들에 고정하여 휴대폰 장치가 움직일 때에도, 둘 사이의 관계는 안정적으로 유지되도록 할 수 있다. 
 <br><br>
-<b>
-💡 Anchor는 CPU costs를 발생시키므로, 가능하면 재사용하며 더 이상 필요하지 않을 시 detach한다.
-</b>
+
+> 💡 Anchor는 CPU costs를 발생시키므로, 가능하면 재사용하며 더 이상 필요하지 않을 시 detach한다.
+
 <br>
 
 ![Untitled 1](https://user-images.githubusercontent.com/72294509/156007322-3ef689d0-60d3-4478-8423-1a57fef47806.png)
@@ -189,9 +189,9 @@ anchorNode.setParent(arFragment.getArSceneView().getScene());
 → Android Studio plugin for importing, viewing, and building 3D assets.
 
 <br>
-<b>
-💡 OpenGL 없이도 AR, 비 AR app에서 사실적인 3D 장면 rendering 가능
-</b>
+
+> 💡 OpenGL 없이도 AR, 비 AR app에서 사실적인 3D 장면 rendering 가능
+
 <br>
 
 ## 4-2. Sceneform SDK version 1.16.0
