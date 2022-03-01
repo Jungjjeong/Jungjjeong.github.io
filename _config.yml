@@ -24,7 +24,7 @@ description              : "개발 일기장."
 url                      : "https://Jungjjeong.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "Jungjjeong/Jungjjeong.github.io"
-teaser                   : /assets/images/profile.png"
+teaser                   : "./assets/images/teaser.png"
 logo                     : "./assets/images/blog.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)

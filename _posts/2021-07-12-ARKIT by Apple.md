@@ -2,6 +2,7 @@
 layout: single
 title : "[iOS] ARKIT by Apple"
 categories : [App, iOS]
+excerpt: "ARKIT에 대해 알아보자"
 ---
 
 

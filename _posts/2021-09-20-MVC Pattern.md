@@ -2,6 +2,7 @@
 layout: single
 title : "[Web] MVC Pattern Practice"
 categories : [Web]
+excerpt: "MVC Pattern 실습"
 ---
 
 ![notion-005](https://user-images.githubusercontent.com/72294509/156121276-300d14e0-0353-44b8-9149-10fbf560bd24.png)

@@ -2,6 +2,8 @@
 layout: single
 title : "[Android] ARCORE by Google"
 categories : [App, Android]
+excerpt: "ARCORE에 대해 알아보자"
+
 ---
 
 
