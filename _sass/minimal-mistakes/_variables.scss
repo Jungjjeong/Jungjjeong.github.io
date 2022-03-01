@@ -35,21 +35,21 @@ $caption-font-family: $serif !default;
 
 /* type scale */
 $type-size-1: 2em !default; // ~39.056px
-$type-size-2: 1.8em !default; // ~31.248px
-$type-size-3: 1.5em !default; // ~25.008px
-$type-size-4: 1.25em !default; // ~20px
-$type-size-5: 0.8em !default; // ~16px
-$type-size-6: 0.75em !default; // ~12px
-$type-size-7: 0.7em !default; // ~11px
-$type-size-8: 0.65em !default; // ~10px
+$type-size-2: 1.85em !default; // ~31.248px
+$type-size-3: 1.6em !default; // ~25.008px
+$type-size-4: 1.3em !default; // ~20px
+$type-size-5: 0.9em !default; // ~16px
+$type-size-6: 0.8em !default; // ~12px
+$type-size-7: 0.75em !default; // ~11px
+$type-size-8: 0.68em !default; // ~10px
 
 /* headline scale */
-$h-size-1: 1.5em !default; // ~25.008px
-$h-size-2: 1.25em !default; // ~20px
-$h-size-3: 1.125em !default; // ~18px
-$h-size-4: 1.0625em !default; // ~17px
-$h-size-5: 1.03125em !default; // ~16.5px
-$h-size-6: 1em !default; // ~16px
+$h-size-1: 1.4em !default; // ~25.008px
+$h-size-2: 1.20em !default; // ~20px
+$h-size-3: 1.110em !default; // ~18px
+$h-size-4: 1.06em !default; // ~17px
+$h-size-5: 1.03em !default; // ~16.5px
+$h-size-6: 0.9em !default; // ~16px
 
 /*
    Colors
@@ -144,7 +144,7 @@ $base0f: #ff5370 !default;
    Breakpoints
    ========================================================================== */
 
-$small: 800px !default;
+$small: 820px !default;
 $medium: 880px !default;
 $medium-wide: 900px !default;
 $large: 1024px !default;
