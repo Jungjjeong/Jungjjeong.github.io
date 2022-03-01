@@ -289,7 +289,7 @@ defaults:
       share: true
       related: true
       toc : true
-      toc_label : Contents
+      toc_label :  
       toc_sticky : true
       sidebar:
         nav : "docs"
