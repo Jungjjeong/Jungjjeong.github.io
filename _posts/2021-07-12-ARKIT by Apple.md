@@ -25,10 +25,9 @@ excerpt: "ARKIT에 대해 알아보자"
 
 ![Untitled](https://user-images.githubusercontent.com/72294509/156118973-8eca89a5-195e-4e29-8733-ffbe507cde36.png)
 
-<aside>
-💡 ARKIT은 mac 내 Simulator로 구동 불가, ARKIT 사용 위해서는 iOS 11 이상의 기기와 Xcode 9 이상의 개발 환경 필요.
 
-</aside>
+> 💡 ARKIT은 mac 내 Simulator로 구동 불가, ARKIT 사용 위해서는 iOS 11 이상의 기기와 Xcode 9 이상의 개발 환경 필요.
+
 
 - Tutorial
 
