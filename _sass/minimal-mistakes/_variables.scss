@@ -6,6 +6,7 @@
    Typography
    ========================================================================== */
 
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR|Ubuntu+Mono);
 $doc-font-size: 16 !default;
 
 /* paragraph indention */
@@ -14,13 +15,12 @@ $indent-var: 1.3em !default;
 
 /* system typefaces */
 $serif: Georgia, Times, serif !default;
-$sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
-  "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
-$monospace: Monaco, Consolas, "Lucida Console", monospace !default;
+$sans-serif: 'Noto Sans KR' !default;
+$monospace: 'Ubuntu Mono' !default;
 
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
-$helvetica: Helvetica, "Helvetica Neue", Arial, sans-serif !default;
+$helvetica: 'Noto Sans KR' !default;
 
 /* serif typefaces */
 $georgia: Georgia, serif !default;
@@ -58,6 +58,7 @@ $h-size-6: 0.9em !default; // ~16px
 $gray: #7a8288 !default;
 $dark-gray: mix(#000, $gray, 50%) !default;
 $darker-gray: mix(#000, $gray, 60%) !default;
+$deep-gray: mix(#000, $gray, 75%) !default;
 $light-gray: mix(#fff, $gray, 50%) !default;
 $lighter-gray: mix(#fff, $gray, 90%) !default;
 
