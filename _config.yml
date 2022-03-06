@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Haeyum"
 description              : "개발 일기장."
-url                      : "https://Jungjjeong.github.io"
+url                      : https://Jungjjeong.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "Jungjjeong/Jungjjeong.github.io"
 teaser                   : "./assets/images/teaser.png"
