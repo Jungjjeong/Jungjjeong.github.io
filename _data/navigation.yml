@@ -16,7 +16,9 @@ main:
 docs:
   - title: Web
     url: /web/
-  - title: App
-    url: /app/
   - title: CS
     url: /cs/
+  - title: DevCourse
+    url: /devCourse/
+  - title: App
+    url: /app/

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://jungjjeong.github.io/sitemap.xml
+Sitemap: https://jungjjeong.github.io/sitemap.xml

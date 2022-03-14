@@ -1,7 +1,7 @@
 ---
 layout: single
 title : "[Web] MVC Pattern Practice"
-categories : [Web]
+categories : [Web, Frontend]
 excerpt: "MVC Pattern 실습"
 ---
 
