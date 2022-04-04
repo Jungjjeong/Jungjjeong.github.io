@@ -1,17 +1,16 @@
 ---
 layout: single
-title : "[Web] MVC Pattern Practice"
-categories : [Web, Frontend]
+title: "[Web] MVC Pattern Practice"
+categories: [Web, Frontend]
+last_modified_at: 2021-09-20
 excerpt: "MVC Pattern 실습"
 ---
 
 ![notion-005](https://user-images.githubusercontent.com/72294509/156121276-300d14e0-0353-44b8-9149-10fbf560bd24.png)
 
-
 # MVC Pattern
 
 > 개념만 배우고 한번도 적용해본 적 없는 MVC 페턴. 직접 코드에 적용시켜 보고자 글을 작성합니다.
-> 
 
 ![https://user-images.githubusercontent.com/72294509/146886750-ba789870-aea4-4a94-82b7-363e0dd7e638.jpeg](https://user-images.githubusercontent.com/72294509/146886750-ba789870-aea4-4a94-82b7-363e0dd7e638.jpeg)
 

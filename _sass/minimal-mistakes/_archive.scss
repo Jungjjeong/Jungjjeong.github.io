@@ -72,6 +72,12 @@
   }
 }
 
+.archive__item-time {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: $type-size-8;
+}
+
 .archive__item-excerpt {
   margin-top: 0;
   font-size: $type-size-6;
@@ -221,6 +227,11 @@
       display: block;
       font-size: $type-size-6;
     }
+  }
+
+  .archive__item-time {
+    font-size: $type-size-8;
+    margin-bottom: 5px;
   }
 
   .archive__item-teaser {
