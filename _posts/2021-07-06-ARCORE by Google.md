@@ -4,6 +4,8 @@ title: "[Android] ARCORE by Google"
 categories: [App, Android]
 last_modified_at: 2021-07-06
 excerpt: "ARCORE에 대해 알아보자"
+header:
+  teaser: https://user-images.githubusercontent.com/72294509/156006719-2f81a767-3ec2-4d5e-bdbb-361ce393feaf.png
 ---
 
 ![006](https://user-images.githubusercontent.com/72294509/156006719-2f81a767-3ec2-4d5e-bdbb-361ce393feaf.png)
@@ -121,7 +123,7 @@ pose가 변경될 수 있다는 사실은, ARCORE가 시간이 지남에 따라 
 
 <br>
 
-![Untitled 1](https://user-images.githubusercontent.com/72294509/156007322-3ef689d0-60d3-4478-8423-1a57fef47806.png)
+![Untitled 1](https://user-images.githubusercontent.com/72294509/156007322-3ef689d0-60d3-4478-8423-1a57fef47806.png){: .align-center}
 
 ```java
 Anchor anchor = hitResult.createAnchor();
@@ -150,7 +152,7 @@ ARCORE Cloud Anchor API를 사용하여 Android 및 iOS장치 용 협업 또는 
 
 ## 2-10. ARCORE ELEMENTS
 
-![Untitled 2](https://user-images.githubusercontent.com/72294509/156006741-2bbd1363-4db7-4e8d-b7f2-d56411c27786.png)
+![Untitled 2](https://user-images.githubusercontent.com/72294509/156006741-2bbd1363-4db7-4e8d-b7f2-d56411c27786.png){: .align-center}
 <br><br>
 
 # 3. ARCORE + OPENGL

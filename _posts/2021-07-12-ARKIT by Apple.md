@@ -4,6 +4,8 @@ title: "[iOS] ARKIT by Apple"
 categories: [App, iOS]
 last_modified_at: 2021-07-12
 excerpt: "ARKIT에 대해 알아보자"
+header:
+  teaser: https://user-images.githubusercontent.com/72294509/156119010-001d2fb2-be0f-4f08-83bf-3dd475785de9.png
 ---
 
 ![007](https://user-images.githubusercontent.com/72294509/156119010-001d2fb2-be0f-4f08-83bf-3dd475785de9.png)
@@ -129,7 +131,7 @@ BUT, ARCORE는 TANGO 플랫폼에서 발전한 플랫폼으로 ARKIT에 비해 �
 
 ## 3-1. 지원 기능
 
-![Untitled 1](https://user-images.githubusercontent.com/72294509/156119181-7136742e-d5c7-4db8-a4ff-1ecc69f76d05.png)
+![Untitled 1](https://user-images.githubusercontent.com/72294509/156119181-7136742e-d5c7-4db8-a4ff-1ecc69f76d05.png){: .align-center}
 
 기본적으로 제공하는 기능은 거의 동일하나
 
@@ -184,7 +186,7 @@ iPhone / iPad 의 iOS 기기만 지원
 
 → 이를 상속받은 8개의 서브클래스가 실질적인 작업을 한다.
 
-![Untitled 2](https://user-images.githubusercontent.com/72294509/156119205-06624c29-21b8-4584-8417-19f389a1bdea.png)
+![Untitled 2](https://user-images.githubusercontent.com/72294509/156119205-06624c29-21b8-4584-8417-19f389a1bdea.png){: .align-center}
 
 → ARWorldTrackingConfiguration
 
@@ -192,7 +194,7 @@ ARkit 기본 기능 제공, 사용자가 거주하는 실제 세계를 추적하
 
 가상의 물체는 현실 세계의 카메라가 어떻게 움직이더라도 같은 곳에 위치해야 한다.
 
-![Untitled 3](https://user-images.githubusercontent.com/72294509/156119215-5427f25a-9adb-44a6-a783-4f7d28eab0e1.png)
+![Untitled 3](https://user-images.githubusercontent.com/72294509/156119215-5427f25a-9adb-44a6-a783-4f7d28eab0e1.png){: .align-center}
 
 기기의 움직임을 3개의 회전각(roll, pitch, yaw)과 3개의 변환각 (x, y, z)을 통해 추적한다.
 <br><br>
@@ -201,7 +203,7 @@ ARkit 기본 기능 제공, 사용자가 거주하는 실제 세계를 추적하
 
 Scenekit는 앱에서 3D 애니메이션 장면과 효과를 만드는 데 도움이 되는 고급 3D 그래픽 프래임워크.
 
-![Untitled 4](https://user-images.githubusercontent.com/72294509/156119230-13eb3104-ecf8-4cab-ada1-fb187f350cd5.png)
+![Untitled 4](https://user-images.githubusercontent.com/72294509/156119230-13eb3104-ecf8-4cab-ada1-fb187f350cd5.png){: .align-center}
 
 > 모바일 환경에서 증강현실 혹은 3D 모델 랜더링을 요하는 어플리케이션을 개발할 때, OpenGL이나 Apple의 Metal과 같은 그래픽 API들을 표준으로 삼음.
 
@@ -253,7 +255,7 @@ sceneView.scene?.rootNode.addChildNode(boxNode)
 
 → 보는 방향이 -z축 방향을 가리키는 우회 좌표계를 사용한다.
 
-![Untitled 5](https://user-images.githubusercontent.com/72294509/156118868-6bcc39c7-f835-4f69-9da7-5a398dc76792.png)
+![Untitled 5](https://user-images.githubusercontent.com/72294509/156118868-6bcc39c7-f835-4f69-9da7-5a398dc76792.png){: .align-center}
 
 **SCENEKIT은 2017년 이후로 더 이상 업데이트 되지 않음**
 
@@ -266,7 +268,7 @@ sceneView.scene?.rootNode.addChildNode(boxNode)
 
 기본 ARKit 통합, 물리적 요소 기반의 랜더링, 변형 및 스켈레톤 애니메이션, 공간 오디오 및 강체 물리 요소를 통해 AR 개발을 빠르고 쉽게 수행할 수 있게 해주는 프레임워크.
 
-![Untitled 6](https://user-images.githubusercontent.com/72294509/156118958-2372aa96-4eb1-4f45-b19a-bb408411f019.png)
+![Untitled 6](https://user-images.githubusercontent.com/72294509/156118958-2372aa96-4eb1-4f45-b19a-bb408411f019.png){: .align-center}
 
 → Apple의 랜더링 기술 제품군에서 가장 최신 SDK (2019년 출시)
 
