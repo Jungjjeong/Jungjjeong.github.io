@@ -42,6 +42,10 @@ KPT는 Keep Problem Try 세 단계로 나누어 각 단계에 따른 프로젝�
 
 <br>
 
+[★ JUNGSION LINK! ★](https://notion-cloning-5kqkc79gh-jungjjeong.vercel.app/)
+
+<br>
+
 ### + 기본 요구사항
 
 - 글 단위를 Document라고 합니다. Document는 Document 여러개를 포함할 수 있습니다.
