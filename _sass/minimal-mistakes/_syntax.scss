@@ -6,8 +6,8 @@ div.highlighter-rouge,
 figure.highlight {
   position: relative;
   margin-bottom: 1em;
-  background: $deep-gray;
-  color: $base05;
+  background: $base0g;
+  color: $base0h;
   font-family: $monospace;
   font-size: $type-size-7;
   line-height: 1.8;
@@ -70,7 +70,7 @@ figure.highlight {
   }
   .k {
     /* Keyword */
-    color: $base0e;
+    color: $base0b;
   }
   .l {
     /* Literal */
@@ -137,11 +137,11 @@ figure.highlight {
   }
   .kc {
     /* Keyword.Constant */
-    color: $base0e;
+    color: $base0c;
   }
   .kd {
     /* Keyword.Declaration */
-    color: $base0e;
+    color: $base0b;
   }
   .kn {
     /* Keyword.Namespace */
@@ -177,7 +177,7 @@ figure.highlight {
   }
   .nb {
     /* Name.Builtin */
-    color: $base05;
+    color: $base0h;
   }
   .nc {
     /* Name.Class */
@@ -213,7 +213,7 @@ figure.highlight {
   }
   .nx {
     /* Name.Other */
-    color: $base0d;
+    color: $base08;
   }
   .py {
     /* Name.Property */
@@ -237,19 +237,19 @@ figure.highlight {
   }
   .mf {
     /* Literal.Number.Float */
-    color: $base09;
+    color: $base0c;
   }
   .mh {
     /* Literal.Number.Hex */
-    color: $base09;
+    color: $base0c;
   }
   .mi {
     /* Literal.Number.Integer */
-    color: $base09;
+    color: $base0c;
   }
   .mo {
     /* Literal.Number.Oct */
-    color: $base09;
+    color: $base0c;
   }
   .sb {
     /* Literal.String.Backtick */
@@ -265,7 +265,7 @@ figure.highlight {
   }
   .s2 {
     /* Literal.String.Double */
-    color: $base0b;
+    color: $base0d;
   }
   .se {
     /* Literal.String.Escape */

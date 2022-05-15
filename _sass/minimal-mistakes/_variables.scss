@@ -58,12 +58,12 @@ $h-size-6: 0.9em !default; // ~16px
 $gray: #7a8288 !default;
 $dark-gray: mix(#000, $gray, 50%) !default;
 $darker-gray: mix(#000, $gray, 60%) !default;
-$deep-gray: mix(#000, $gray, 75%) !default;
+$deep-gray: mix(#000, $gray, 70%) !default;
 $light-gray: mix(#fff, $gray, 50%) !default;
 $lighter-gray: mix(#fff, $gray, 90%) !default;
 
 $background-color: #fff !default;
-$code-background-color: #e5ebf3 !default;
+$code-background-color: #ececec !default;
 $code-background-color-dark: $light-gray !default;
 $text-color: $dark-gray !default;
 $muted-text-color: mix(#fff, $text-color, 20%) !default;
@@ -128,18 +128,21 @@ $base00: #263238 !default;
 $base01: #2e3c43 !default;
 $base02: #314549 !default;
 $base03: #546e7a !default;
-$base04: #b2ccd6 !default;
-$base05: #eeffff !default;
+$base04: slategray !default;
+$base05: rgb(133, 133, 133) !default;
 $base06: #eeffff !default;
 $base07: #ffffff !default;
-$base08: #f07178 !default;
+$base08: #DD4A68 !default;
 $base09: #f78c6c !default;
-$base0a: #ffcb6b !default;
-$base0b: #c3e88d !default;
-$base0c: #89ddff !default;
-$base0d: #82aaff !default;
+$base0a: #6d5e43 !default;
+$base0b: #07a !default;
+$base0c: #905 !default;
+$base0d: #690 !default;
 $base0e: #c792ea !default;
 $base0f: #ff5370 !default;
+$base0g: #faf9f6 !default;
+$base0h: #37352F !default;
+
 
 /*
    Breakpoints
