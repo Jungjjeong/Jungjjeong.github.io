@@ -11,16 +11,16 @@ $doc-font-size: 16 !default;
 
 /* paragraph indention */
 $paragraph-indent: false !default; // true, false (default)
-$indent-var: 1.5em !default;
+$indent-var: 0.7em !default;
 
 /* system typefaces */
 $serif: Georgia, Times, serif !default;
-$sans-serif: 'Noto Sans KR' !default;
-$monospace: 'Ubuntu Mono' !default;
+$sans-serif: "Noto Sans KR" !default;
+$monospace: "Ubuntu Mono" !default;
 
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
-$helvetica: 'Noto Sans KR' !default;
+$helvetica: "Noto Sans KR" !default;
 
 /* serif typefaces */
 $georgia: Georgia, serif !default;
@@ -45,8 +45,8 @@ $type-size-8: 0.7em !default; // ~10px
 
 /* headline scale */
 $h-size-1: 1.4em !default; // ~25.008px
-$h-size-2: 1.20em !default; // ~20px
-$h-size-3: 1.110em !default; // ~18px
+$h-size-2: 1.2em !default; // ~20px
+$h-size-3: 1.11em !default; // ~18px
 $h-size-4: 1.06em !default; // ~17px
 $h-size-5: 1.03em !default; // ~16.5px
 $h-size-6: 0.9em !default; // ~16px
@@ -75,7 +75,7 @@ $primary-color: #6f777d !default;
 $success-color: #3fa63f !default;
 $warning-color: #d67f05 !default;
 $danger-color: #ee5f5b !default;
-$info-color: #4A80C0 !default;
+$info-color: #4a80c0 !default;
 $focus-color: $primary-color !default;
 $active-color: mix(#fff, $primary-color, 80%) !default;
 
@@ -132,7 +132,7 @@ $base04: slategray !default;
 $base05: rgb(133, 133, 133) !default;
 $base06: #eeffff !default;
 $base07: #ffffff !default;
-$base08: #DD4A68 !default;
+$base08: #dd4a68 !default;
 $base09: #f78c6c !default;
 $base0a: #6d5e43 !default;
 $base0b: #07a !default;
@@ -141,8 +141,7 @@ $base0d: #690 !default;
 $base0e: #c792ea !default;
 $base0f: #ff5370 !default;
 $base0g: #faf9f6 !default;
-$base0h: #37352F !default;
-
+$base0h: #37352f !default;
 
 /*
    Breakpoints
