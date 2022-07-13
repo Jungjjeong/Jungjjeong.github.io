@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: devCourse/
-title: "Dev Course"
+title: "PROGRAMMERS DEV COURSE"
 
 author_profile: true
 sidebar:
@@ -9,6 +9,6 @@ sidebar:
 ---
 
 {% assign posts = site.categories.devCourse %}
-{% for post in posts %} 
-	{% include archive-single.html type=page.entries_layout %} 
+{% for post in posts %}
+{% include archive-single.html type=page.entries_layout %}
 {% endfor %}

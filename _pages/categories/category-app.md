@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: app/
-title: "App"
+title: "APP"
 
 author_profile: true
 sidebar:
@@ -9,6 +9,6 @@ sidebar:
 ---
 
 {% assign posts = site.categories.App %}
-{% for post in posts %} 
-	{% include archive-single.html type=page.entries_layout %} 
+{% for post in posts %}
+{% include archive-single.html type=page.entries_layout %}
 {% endfor %}
